@@ -1,0 +1,15 @@
+select {
+  border: 0.5px solid grey;
+  padding: 10px;
+  width: 80%;
+}
+
+@media only screen and (max-width: 900px) {
+  .ColTwo svg {
+    height: 200px !important;
+    width: 200px !important;
+  }
+  select {
+    width: 100%;
+  }
+}

@@ -1,0 +1,252 @@
+.navbar {
+  background-color: white;
+  height: 80px;
+  width: 100%;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.navbar-container {
+  display: grid;
+  height: 80px;
+  width: 100%;
+  grid-template-areas: "logo list icon btn";
+  align-items: center;
+  justify-items: center;
+}
+
+.navbar::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  margin: -5;
+  height: 4px;
+  border-radius: inherit;
+  background: linear-gradient(to right, #0083ed, #001963);
+}
+
+.navbar > .navbar-hamburger-icon {
+  grid-area: hamburgerMenu;
+}
+
+.navbar > .navbar__logo {
+  grid-area: logo;
+}
+
+.navbar > .navbar__list {
+  grid-area: list;
+}
+
+.navbar__list-item li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.navbar__list-item li a {
+  color: #002c73;
+  font-weight: 500;
+}
+
+.navbar__list-item li a {
+  color: #002c73;
+  font-weight: 500;
+}
+
+.navbar__list-item li a:hover,
+a.active {
+  color: #0083ed;
+  transition: 0.5s;
+}
+
+.navbar > .navbar__icon {
+  grid-area: icon;
+}
+
+.navbar > .navbar__btn {
+  grid-area: btn;
+}
+
+.navbar__btn button {
+  padding: 8px 24px;
+  border-radius: 20px;
+  font-size: 13px;
+  border: none;
+  background-color: #006cbe;
+  color: white;
+  margin-bottom: 0;
+  max-width: 100%;
+}
+
+.navbar-hamburger-icon {
+  display: none;
+}
+
+.navbar-hamburger-icon-bar1,
+.navbar-hamburger-icon-bar2,
+.navbar-hamburger-icon-bar3 {
+  width: 35px;
+  height: 3px;
+  background-color: #002c73;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .navbar-hamburger-icon-bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .navbar-hamburger-icon-bar2 {
+  opacity: 0;
+}
+
+.open .navbar-hamburger-icon-bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .navbar-container-mobile-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: white;
+  z-index: 30;
+}
+
+.navbar-container-mobile-view {
+  display: none;
+  position: absolute;
+  top: 80px;
+  height: 100vh;
+  left: 0;
+  width: 45vw;
+}
+
+.navbar-container-mobile-view {
+  /* display: none; */
+  transition: all 0.5s;
+}
+
+.navbar__icon {
+  position: relative;
+}
+.navbar__icon form input {
+  cursor: pointer;
+  display: block;
+  font-size: 12px;
+  border-radius: 18px;
+  border: 2px solid #006cbe;
+  font-weight: normal;
+  width: 100%;
+  padding: 6px 10px 6px 45px;
+  text-align: left;
+  transition: none;
+  background: transparent;
+  vertical-align: middle;
+  color: #006cbe;
+  box-sizing: border-box;
+}
+
+.navbar__icon form button {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 20px;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+  .navbar-container {
+    grid-template-areas: "logo";
+    align-items: center;
+    justify-items: center;
+  }
+  .navbar-container-mobile-view {
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .navbar-hamburger-icon {
+    display: block;
+    margin-left: 15px;
+  }
+
+  .navbar-container > .navbar__list {
+    display: none;
+  }
+
+  .navbar-container > .navbar__icon {
+    display: none;
+  }
+
+  .navbar-container > .navbar__btn {
+    display: none;
+  }
+
+  .navbar-container-mobile-view ul {
+    margin-top: 5vh;
+    width: 100%;
+  }
+
+  .navbar-container-mobile-view ul li {
+    color: #001963;
+    padding: 0 20px 14px 16px;
+    line-height: 20px;
+  }
+
+  .navbar__icon {
+    padding: 8px 8px;
+    width: 100%;
+    position: relative;
+  }
+
+  .navbar__icon form input {
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    border-radius: 18px;
+    border: 2px solid #006cbe;
+    font-weight: normal;
+    width: 100%;
+    padding: 6px 10px 6px 45px;
+    text-align: left;
+    transition: none;
+    background: transparent;
+    vertical-align: middle;
+    color: #006cbe;
+    box-sizing: border-box;
+  }
+
+  .navbar__icon form button {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 20px;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+  }
+
+  .navbar__btn {
+    width: 100%;
+    padding: 8px 8px;
+  }
+
+  .navbar__btn button {
+    padding: 8px 8px;
+    border-radius: 20px;
+    border: none;
+    background-color: #006cbe;
+    color: white;
+    width: 100%;
+  }
+}
