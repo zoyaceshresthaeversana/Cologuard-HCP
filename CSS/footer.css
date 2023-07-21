@@ -93,6 +93,54 @@
   padding: 0 45px 15px 0;
 }
 
+.footer-conatiner {
+  text-align: center;
+}
+
+.footer-conatiner img {
+  width: 250px;
+  height: auto;
+}
+
+.footer-container-flex {
+  display: grid;
+  grid-template-areas: "ColOne ColTwo ColThree ColFour ColFive";
+}
+
+.footer-container-flex ul {
+  list-style: none;
+  font-size: 13px;
+  color: #00144f;
+}
+
+.footer-container-flex ul li {
+  padding-bottom: 8px;
+}
+
+.footer-container-flex .ColOne {
+  grid-area: ColOne;
+}
+
+.footer-container-flex .ColTwo {
+  grid-area: ColTwo;
+}
+.footer-container-flex .ColThree {
+  grid-area: ColThree;
+}
+.footer-container-flex .ColFour {
+  grid-area: ColFour;
+}
+.footer-container-flex .ColFive {
+  grid-area: ColFive;
+}
+
+.footer-container-flex-end {
+  text-align: center;
+  color: #00144f;
+  margin-top: 16px;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 900px) {
   .footer-mid-grid .ColTwo div {
     display: flex;
@@ -148,5 +196,17 @@
   .bg-secondary .container {
     padding: 24px 50px 150px 50px;
     margin-bottom: 0;
+  }
+
+  .footer-container-flex {
+    display: grid;
+    text-align: center;
+    row-gap: 20px;
+    grid-template-areas:
+      "ColOne"
+      "ColTwo"
+      "ColThree"
+      "ColFour"
+      "ColFive";
   }
 }

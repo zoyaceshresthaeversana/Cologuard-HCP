@@ -19,9 +19,17 @@
 
 body {
   font-family: "Whyte Super", sans-serif;
-  color: #002c73;
+  color: black;
   line-height: 1.5;
-  background-color: #e6eef4;
+  background-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #002c73;
 }
 
 .mb-24 {
@@ -46,6 +54,16 @@ body {
   padding-top: 24px !important;
 }
 
+.pl-12 {
+  padding-left: 12px !important;
+}
+.pt-12 {
+  padding-top: 12px !important;
+}
+.pb-12 {
+  padding-bottom: 12px !important;
+}
+
 .p20 {
   padding: 20px !important;
 }
@@ -66,6 +84,11 @@ body {
   background-color: #0087ed;
   color: white;
 }
+
+.cl-white {
+  color: white !important;
+}
+
 @media only screen and (min-width: 800px) {
   .container {
     padding: 0 50px;

@@ -5,10 +5,10 @@ select {
 }
 
 @media only screen and (max-width: 900px) {
-  .ColTwo svg {
+  /* .ColTwo svg {
     height: 200px !important;
     width: 200px !important;
-  }
+  } */
   select {
     width: 100%;
   }

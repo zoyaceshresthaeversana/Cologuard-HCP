@@ -53,6 +53,12 @@ button {
   max-width: 1100px;
 }
 
+.container-bleed {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
 .bg-white {
   background-color: white;
 }
@@ -65,33 +71,79 @@ button {
   padding-bottom: 24px;
 }
 
-.hero-container {
-  background-image: url(../img/background.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  height: 35vh;
-}
-
-.hero-container .container {
-  display: flex;
-  align-items: center;
-}
-
-.hero-container h1 {
-  font-size: 45px;
-  height: 200px;
-  position: relative;
-  font-weight: 500;
-}
-
-.hero-text-container {
-  padding: 50px 25px;
+.white-text-container h3 {
+  text-align: center;
 }
 
 sup {
   font-size: 40%;
   position: absolute;
+}
+
+.hcp-hero-container {
+  display: grid;
+  grid-template-areas: "ColOne ColTwo";
+  text-align: center;
+}
+
+.hcp-hero-container .ColOne {
+  grid-area: ColOne;
+  padding-top: 50px;
+}
+
+.hcp-hero-container .ColOne span {
+  color: #0584ed;
+}
+
+.hcp-hero-container .ColTwo {
+  grid-area: ColTwo;
+  padding-top: 50px;
+  text-align: left;
+}
+
+.hcp-icon-grid-container {
+  display: grid;
+  grid-template-areas: "ColOne ColTwo ColThree ColFour";
+}
+
+.hcp-icon-grid-container .ColOne {
+  grid-area: ColOne;
+  padding: 0 25px;
+}
+
+.hcp-icon-grid-container .ColOne button {
+  border: none;
+  background-color: #002c73;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+}
+
+.hcp-icon-grid-container .ColTwo {
+  grid-area: ColTwo;
+  padding: 0 25px;
+}
+
+.hcp-icon-grid-container .ColThree {
+  grid-area: ColThree;
+  padding: 0 25px;
+}
+
+.hcp-icon-grid-container .ColFour {
+  grid-area: ColFour;
+  padding: 0 25px;
+}
+
+.hcp-icon-grid-container ul {
+  list-style: none;
+}
+
+.hcp-icon-grid-container ul li::before {
+  content: "\2022";
+  color: #006cbe;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
 }
 
 .chart-container a {
@@ -208,6 +260,24 @@ sup {
   border-radius: 100px;
 }
 
+.banner-container {
+  background-color: #002c73;
+  color: white;
+  padding: 12px 0;
+}
+
+.banner-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 0 auto !important;
+}
+
+.banner-flex div {
+  background-color: rgb(239, 111, 26);
+  padding: 7px 7px 1px 7px;
+}
+
 @media only screen and (max-width: 900px) {
   .primary-button {
     font-size: 16px;
@@ -234,18 +304,22 @@ sup {
     max-width: 100%;
   }
 
-  .hero-container {
-    background-size: cover;
-    background-position: 66% 50% !important;
+  .hcp-hero-container {
+    grid-template-areas: "ColOne";
+    text-align: left;
   }
 
-  .hero-text-container {
-    background: linear-gradient(
-      90deg,
-      #fff 33%,
-      rgba(255, 255, 255, 0.2) 66%,
-      rgba(255, 255, 255, 0) 100%
-    );
+  .hcp-hero-container .ColTwo {
+    display: none;
+  }
+
+  .hcp-icon-grid-container {
+    grid-template-areas:
+      "ColOne"
+      "ColTwo"
+      "ColThree"
+      "ColFour";
+    row-gap: 30px;
   }
 
   .chart-container h1 {
@@ -275,7 +349,7 @@ sup {
   }
 
   .two-col-flex .ColOne,
-  .ColTwo {
+  .two-col-flex .ColTwo {
     max-width: 90%;
     margin: 0 auto;
   }
