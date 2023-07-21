@@ -6,8 +6,20 @@
 }
 
 @font-face {
-  font-family: "Whyte Super";
+  font-family: "Whyte";
   src: url("../Whyte-Super.eot");
+  src: local("Whyte Super"), local("Whyte-Super"),
+    url("Whyte-Super.eot?#iefix") format("embedded-opentype"),
+    url("Whyte-Super.woff2") format("woff2"),
+    url("Whyte-Super.woff") format("woff"),
+    url("Whyte-Super.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Whyte";
+  src: url("../Whyte-Super.ttf");
   src: local("Whyte Super"), local("Whyte-Super"),
     url("Whyte-Super.eot?#iefix") format("embedded-opentype"),
     url("Whyte-Super.woff2") format("woff2"),
@@ -19,6 +31,7 @@
 
 body {
   font-family: "Whyte Super", sans-serif;
+  font-weight: normal;
   color: black;
   line-height: 1.5;
   background-color: white;

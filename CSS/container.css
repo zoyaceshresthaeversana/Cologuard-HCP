@@ -119,6 +119,10 @@ sup {
   font-size: 16px;
 }
 
+.hcp-icon-grid-container .ColOne button a {
+  color: white;
+}
+
 .hcp-icon-grid-container .ColTwo {
   grid-area: ColTwo;
   padding: 0 25px;
