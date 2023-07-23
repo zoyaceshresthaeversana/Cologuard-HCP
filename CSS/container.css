@@ -101,6 +101,53 @@ sup {
   text-align: left;
 }
 
+.hcp-coverage-hero-container {
+  display: grid;
+  grid-template-areas: "ColOne ColTwo ";
+}
+
+.hcp-coverage-hero-container .ColOne {
+  grid-area: "ColOne";
+  max-width: 500px;
+}
+
+.hcp-container-second-hero-container .ColOne div,
+.hcp-container-second-hero-container .ColTwo div {
+  padding: 30px;
+}
+
+.hcp-coverage-hero-container .ColTwo {
+  grid-area: "ColTwo";
+  text-align: center;
+}
+
+.hcp-container-second-hero-container {
+  display: grid;
+  grid-template-areas: "ColOne ColTwo";
+  text-align: center;
+}
+
+.hcp-container-second-hero-container h1 {
+  margin-top: -24px;
+}
+
+.hcp-container-second-hero-container h1 span {
+  padding: 20px;
+  background-color: white;
+}
+
+.hcp-container-second-hero-container .ColOne {
+  grid-area: ColOne;
+  border: 3px solid #0584ed;
+  margin: 10px;
+}
+
+.hcp-container-second-hero-container .ColTwo {
+  grid-area: ColTwo;
+  border: 3px solid #0584ed;
+  margin: 10px;
+}
+
 .hcp-icon-grid-container {
   display: grid;
   grid-template-areas: "ColOne ColTwo ColThree ColFour";
@@ -282,6 +329,75 @@ sup {
   padding: 7px 7px 1px 7px;
 }
 
+.blue-box-container {
+  border: 5px solid #0584ed;
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.blue-box-container h5 {
+  padding: 35px;
+}
+
+.blue-box-container h2 {
+  margin-top: -20px;
+}
+
+.blue-box-container span {
+  padding: 20px;
+  background-color: white;
+}
+
+.blue-box-container-half {
+  padding: 5px;
+  border-left: 5px solid #0584ed;
+  border-right: 5px solid #0584ed;
+}
+
+.container-inside-text {
+  max-width: 600px;
+}
+
+.image-icon-grid {
+  display: grid;
+  grid-template-areas: "ColOne ColTwo";
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+}
+
+.image-icon-grid ul {
+  list-style: none;
+}
+
+.image-icon-grid ul ::before {
+  content: "\2022";
+  font-size: 15px;
+  color: #006cbe;
+  margin-right: 10px;
+}
+
+.image-icon-grid .ColOne {
+  grid-area: ColOne;
+}
+
+.image-icon-grid .ColOne img {
+  width: 500px;
+}
+
+.image-icon-grid .ColTwo {
+  grid-area: ColTwo;
+  max-width: 400px;
+}
+
+.image-icon-inner-grid {
+}
+
+.ISI {
+  font-size: 14px;
+}
+
 @media only screen and (max-width: 900px) {
   .primary-button {
     font-size: 16px;
@@ -356,5 +472,33 @@ sup {
   .two-col-flex .ColTwo {
     max-width: 90%;
     margin: 0 auto;
+  }
+
+  .hcp-coverage-hero-container {
+    grid-template-areas: "ColOne";
+  }
+
+  .hcp-coverage-hero-container .ColOne {
+    font-size: 14px;
+  }
+
+  .hcp-coverage-hero-container .ColTwo {
+    display: none;
+  }
+
+  .hcp-container-second-hero-container {
+    row-gap: 30px;
+    grid-template-areas:
+      "ColOne"
+      "ColTwo";
+  }
+
+  .image-icon-grid {
+    text-align: center;
+    grid-template-areas: "ColTwo" "ColOne";
+  }
+
+  .cologuard-image {
+    display: none;
   }
 }

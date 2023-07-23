@@ -4,33 +4,20 @@
   text-decoration: none;
   box-sizing: border-box;
 }
-
 @font-face {
-  font-family: "Whyte";
-  src: url("../Whyte-Super.eot");
-  src: local("Whyte Super"), local("Whyte-Super"),
-    url("Whyte-Super.eot?#iefix") format("embedded-opentype"),
-    url("Whyte-Super.woff2") format("woff2"),
-    url("Whyte-Super.woff") format("woff"),
-    url("Whyte-Super.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Whyte";
-  src: url("../Whyte-Super.ttf");
-  src: local("Whyte Super"), local("Whyte-Super"),
-    url("Whyte-Super.eot?#iefix") format("embedded-opentype"),
-    url("Whyte-Super.woff2") format("woff2"),
-    url("Whyte-Super.woff") format("woff"),
-    url("Whyte-Super.ttf") format("truetype");
+  font-family: "Whyte Book";
+  src: url("Whyte-Book.eot");
+  src: local("Whyte Book"), local("Whyte-Book"),
+    url("Whyte-Book.eot?#iefix") format("embedded-opentype"),
+    url("Whyte-Book.woff2") format("woff2"),
+    url("Whyte-Book.woff") format("woff"),
+    url("Whyte-Book.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: "Whyte Super", sans-serif;
+  font-family: "Whyte Book", sans-serif;
   font-weight: normal;
   color: black;
   line-height: 1.5;
@@ -58,6 +45,14 @@ h5 {
 
 .mt-16 {
   margin-top: 16px !important;
+}
+
+.mb-50 {
+  margin-bottom: 50px !important;
+}
+
+.mt-50 {
+  margin-top: 50px !important;
 }
 
 .pb-24 {
