@@ -324,9 +324,15 @@ sup {
   margin: 0 auto 0 auto !important;
 }
 
-.banner-flex div {
+.banner-flex button {
   background-color: rgb(239, 111, 26);
-  padding: 7px 7px 1px 7px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 0;
+  max-width: 100%;
+  padding: 10px;
+  border-radius: 45px;
 }
 
 .blue-box-container {
