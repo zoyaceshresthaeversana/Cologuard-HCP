@@ -20,7 +20,7 @@ body {
   font-family: "Whyte Book", sans-serif;
   font-weight: normal;
   color: black;
-  line-height: 1.5;
+  line-height: 1.75;
   background-color: white;
 }
 
@@ -95,6 +95,11 @@ h5 {
 
 .cl-white {
   color: white !important;
+}
+
+.underline_link {
+  color: #002c73;
+  text-decoration: underline;
 }
 
 @media only screen and (min-width: 800px) {

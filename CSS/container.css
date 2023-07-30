@@ -63,6 +63,10 @@ button {
   background-color: white;
 }
 
+#get-a-Provider .white-text-container {
+  padding-bottom: 16px;
+}
+
 .white-text-container {
   padding: 50px 60px;
 }
@@ -84,6 +88,7 @@ sup {
   display: grid;
   grid-template-areas: "ColOne ColTwo";
   text-align: center;
+  font-weight: bold;
 }
 
 .hcp-hero-container .ColOne {
@@ -153,6 +158,13 @@ sup {
   grid-template-areas: "ColOne ColTwo ColThree ColFour";
 }
 
+.hcp-icon-grid-container .ColOne,
+.hcp-icon-grid-container .ColTwo,
+.hcp-icon-grid-container .ColThree,
+.hcp-icon-grid-container .ColFour {
+  max-width: 340px;
+}
+
 .hcp-icon-grid-container .ColOne {
   grid-area: ColOne;
   padding: 0 25px;
@@ -162,11 +174,13 @@ sup {
   border: none;
   background-color: #002c73;
   color: white;
-  padding: 12px 20px;
-  font-size: 16px;
+  padding: 12px 12px;
+  font-size: 14px;
+  border-radius: 10px;
+  width: 100%;
 }
 
-.hcp-icon-grid-container .ColOne button a {
+.hcp-icon-grid-container .ColOne button a h4 {
   color: white;
 }
 
@@ -205,7 +219,7 @@ sup {
 .chart-container .white-text-container:first-child {
   border-bottom: 1px solid black;
   padding-bottom: 12px;
-  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2);
+  padding-top: 12px;
 }
 
 .chart-container-bottom-flex {
@@ -463,6 +477,14 @@ sup {
       "ColTwo";
   }
 
+  .chart-container .white-text-container {
+    padding: 50px 30px;
+  }
+
+  .chart-container .hidden-cover-container {
+    padding: 0;
+  }
+
   .image-icon-grid {
     text-align: center;
     grid-template-areas: "ColTwo" "ColOne";
@@ -474,5 +496,16 @@ sup {
 
   .image-icon-grid .ColOne img {
     width: 300px;
+  }
+
+  .hcp-icon-grid-container .ColOne,
+  .hcp-icon-grid-container .ColTwo,
+  .hcp-icon-grid-container .ColThree,
+  .hcp-icon-grid-container .ColFour {
+    max-width: 100%;
+  }
+
+  #get-a-Provider .white-text-container {
+    padding: 60px 10px 60px 10px;
   }
 }
