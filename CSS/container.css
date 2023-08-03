@@ -472,6 +472,8 @@ sup {
   right: 35%;
   top: 10%;
   display: none;
+  transition: transform 1s;
+  transform: translateY(10%);
 }
 
 .Pop-up-content {
@@ -667,5 +669,22 @@ sup {
   }
   .pop-up-grid {
     grid-template-areas: "ColTwo" "ColOne";
+  }
+
+  .pop-up-grid .ColTwo {
+    text-align: center;
+  }
+
+  .Pop-up-content {
+    padding: 10px !important;
+    margin: 10px;
+  }
+
+  .HCP-pop-up {
+    position: sticky;
+    right: 0;
+  }
+  .pop-up-grid .ColOne img {
+    object-position: -30px 1px;
   }
 }
