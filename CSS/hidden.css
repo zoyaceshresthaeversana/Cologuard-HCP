@@ -7,7 +7,8 @@
 .hidden-chart-container {
   text-align: left;
   display: none;
-  grid-template-areas: "ColOne  ColOne ColTwo";
+  grid-template-areas: "ColOne ColOne ColTwo";
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .hidden-chart-container .ColOne {
@@ -47,7 +48,8 @@
 .Medicaid-hidden-chart-container {
   text-align: left;
   display: none;
-  grid-template-areas: "ColOne  ColOne ColTwo";
+  grid-template-areas: "ColOne ColOne ColTwo";
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .Medicaid-hidden-chart-container .ColOne {
@@ -80,7 +82,8 @@
 .Medicare-hidden-chart-container {
   text-align: left;
   display: none;
-  grid-template-areas: "ColOne  ColOne ColTwo";
+  grid-template-areas: "ColOne ColOne ColTwo";
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .Medicare-hidden-chart-container .ColOne {
@@ -110,10 +113,17 @@
 }
 
 @media only screen and (max-width: 900px) {
+  .Medicaid-hidden-chart-container .ColTwo,
+  .Medicare-hidden-chart-container .ColTwo,
+  .hidden-chart-container .ColTwo {
+    text-align: center;
+  }
+
   .Medicaid-hidden-chart-container {
     grid-template-areas:
       "ColOne"
       "ColTwo";
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .Medicaid-hidden-chart-container button {
@@ -125,6 +135,7 @@
     grid-template-areas:
       "ColOne"
       "ColTwo";
+    grid-template-columns: none;
   }
 
   .Medicare-hidden-chart-container button {
@@ -136,6 +147,7 @@
     grid-template-areas:
       "ColOne"
       "ColTwo";
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .hidden-chart-container button {
@@ -147,6 +159,7 @@
     grid-template-areas:
       "ColOne"
       "ColTwo";
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .Medicaid-hidden-chart-container button {
