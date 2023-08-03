@@ -392,6 +392,130 @@ sup {
   font-size: 14px;
 }
 
+.hero-banner-container {
+  background-color: #002c73;
+}
+
+.hero-banner-container h1 {
+  color: white;
+}
+
+.hero-banner-container p {
+  color: white;
+}
+
+.hero-banner-container-grid {
+  display: grid;
+  grid-template-areas: "ColOne ColTwo";
+  justify-content: space-around;
+  padding: 12px 0;
+}
+
+.hero-banner-container-grid .ColOne {
+  grid-area: ColOne;
+}
+
+.hero-banner-container-grid .ColTwo {
+  padding-top: 12px;
+  grid-area: ColTwo;
+  border-left: 3px solid #0087ed;
+  padding-left: 24px;
+}
+
+.body-banner-grid {
+  display: grid;
+  grid-template-areas: "ColOne ColTwo ColThree";
+  color: white;
+}
+
+.body-banner-grid .ColOne {
+  grid-area: ColOne;
+  background-color: #334782;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.body-banner-grid .ColTwo {
+  grid-area: ColTwo;
+  background-color: #0087ed;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.body-banner-grid .ColThree {
+  grid-area: ColThree;
+  background-color: #001963;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.body-banner-grid .ColThree p {
+  padding-left: 12px;
+}
+
+.HCP-home-hero {
+  background-image: url("../img/Rectangle2.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+
+.HCP-pop-up {
+  position: absolute;
+  right: 35%;
+  top: 10%;
+  display: none;
+}
+
+.Pop-up-content {
+  background-color: #cce7fb;
+  padding: 20px 30px 0 0px;
+}
+
+.Pop-up-content button {
+  color: white;
+  background-color: #001963;
+  border-radius: 10px;
+  padding: 6px 12px;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+}
+
+.pop-up-grid {
+  display: grid;
+  grid-template-areas: "ColOne ColTwo";
+}
+
+.pop-up-grid .ColOne {
+  grid-area: ColOne;
+  height: 300px;
+  overflow: hidden;
+}
+
+.pop-up-grid .ColOne img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  object-position: 10px 1px; /* try 20px 10px */
+}
+
+.pop-up-grid .ColTwo {
+  grid-area: ColTwo;
+}
+
+.cross-btn {
+  background-color: #cce7fb !important;
+  width: auto !important;
+}
+
 @media only screen and (max-width: 900px) {
   .primary-button {
     font-size: 16px;
@@ -507,5 +631,41 @@ sup {
 
   #get-a-Provider .white-text-container {
     padding: 60px 10px 60px 10px;
+  }
+
+  .hero-banner-container-grid {
+    grid-template-areas: "ColOne" "ColTwo";
+  }
+
+  .hero-banner-container-grid .ColTwo {
+    padding-top: 12px;
+    grid-area: ColTwo;
+    border-top: 3px solid #0087ed;
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .hero-banner-container-grid .ColOne {
+    padding-bottom: 16px;
+  }
+
+  .body-banner-grid {
+    grid-template-areas: "ColOne" "ColTwo" "ColThree";
+  }
+
+  .body-banner-grid .ColOne,
+  .body-banner-grid .ColTwo,
+  .body-banner-grid .ColThree {
+    margin-bottom: 0;
+  }
+
+  .HCP-home-hero {
+    background-image: url("../img/Rectangle1.png");
+    background-size: cover;
+    background-position: center center;
+    height: 30vh;
+  }
+  .pop-up-grid {
+    grid-template-areas: "ColTwo" "ColOne";
   }
 }

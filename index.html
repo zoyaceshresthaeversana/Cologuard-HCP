@@ -24,46 +24,46 @@
     <link href="./CSS/dropdown.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="page-container">
-      <!-- Nav bar -->
-      <div class="navbar">
-        <div class="navbar-hamburger-icon" onclick="toggleMobileMenu(this)">
-          <div class="navbar-hamburger-icon-bar1"></div>
-          <div class="navbar-hamburger-icon-bar2"></div>
-          <div class="navbar-hamburger-icon-bar3"></div>
-          <nav class="navbar-container-mobile-view">
-            <ul>
-              <li>
-                <a class="active" href="#">Evolve the CRC Approach</a>
-              </li>
-              <li>
-                <a class="active" href="#">About Cologuard</a>
-              </li>
-              <li>
-                <a class="active" href="#">Better CRC Outcomes</a>
-              </li>
-              <li>
-                <a class="active" href="coverage.html">Coverage and support</a>
-              </li>
-              <li>
-                <a class="active" href="index.html">Resources and Events</a>
-              </li>
-            </ul>
-            <div class="navbar__icon">
-              <form>
-                <input name="" placeholder="Search...." type="text" />
-                <button type="submit"><i class="fa fa-search"></i></button>
-              </form>
-            </div>
-            <div class="navbar__btn">
-              <button>Log in</button>
-            </div>
-          </nav>
-        </div>
-        <nav class="navbar-container">
-          <div>
-            <label class="navbar__logo"
-              ><svg
+    <!-- Nav bar  -->
+    <div class="navbar">
+      <div class="navbar-hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="navbar-hamburger-icon-bar1"></div>
+        <div class="navbar-hamburger-icon-bar2"></div>
+        <div class="navbar-hamburger-icon-bar3"></div>
+        <nav class="navbar-container-mobile-view">
+          <ul>
+            <li>
+              <a class="active" href="#">Evolve the CRC Approach</a>
+            </li>
+            <li>
+              <a class="active" href="#">About Cologuard</a>
+            </li>
+            <li>
+              <a class="active" href="#">Better CRC Outcomes</a>
+            </li>
+            <li>
+              <a class="active" href="coverage.html">Coverage and support</a>
+            </li>
+            <li>
+              <a class="active" href="resources.html">Resources and Events</a>
+            </li>
+          </ul>
+          <div class="navbar__icon">
+            <form>
+              <input name="" placeholder="Search...." type="text" />
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+          <div class="navbar__btn">
+            <button>Log in</button>
+          </div>
+        </nav>
+      </div>
+      <nav class="navbar-container">
+        <div>
+          <a href="index.html">
+            <label class="navbar__logo">
+              <svg
                 width="160"
                 height="auto"
                 viewBox="0 0 1802 382"
@@ -127,508 +127,249 @@
                 </defs>
               </svg>
             </label>
-          </div>
-          <div class="navbar__list">
-            <ul class="navbar__list-item">
-              <li>
-                <a class="active" href="#">Evolve the CRC Approach</a>
-              </li>
-              <li>
-                <a class="active" href="#">About Cologuard</a>
-              </li>
-              <li>
-                <a class="active" href="#">Better CRC Outcomes</a>
-              </li>
-              <li>
-                <a class="active" href="coverage.html">Coverage and support</a>
-              </li>
-              <li>
-                <a class="active" href="index.html">Resources and Events</a>
-              </li>
-            </ul>
-          </div>
-          <div class="navbar__icon">
-            <form>
-              <input name="" placeholder="Search...." type="text" />
-              <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
-          </div>
-        </nav>
-      </div>
-
-      <!-- Hero -->
-      <div>
-        <div class="container">
-          <div class="hcp-hero-container">
-            <div class="ColOne">
-              <h2>Cologuard makes <span>ordering simple</span></h2>
-            </div>
-            <div class="ColTwo">
-              <svg
-                width="200"
-                height="auto"
-                viewBox="0 0 800 428"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <rect width="800" height="428" fill="url(#pattern0)" />
-                <defs>
-                  <pattern
-                    id="pattern0"
-                    patternContentUnits="objectBoundingBox"
-                    width="1"
-                    height="1"
-                  >
-                    <use
-                      xlink:href="#image0_267_13381"
-                      transform="scale(0.00125 0.00233645)"
-                    />
-                  </pattern>
-                  <image
-                    id="image0_267_13381"
-                    width="800"
-                    height="428"
-                    xlink:href="data:image/jpeg;base64,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iigAph/1y/7p/pT6Yf8AXL/un+lAD6KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAopKKACiiigYUlFFABSUUUAJRRSUwCiikoAKSiigAopKKACiiigAopKKYC0UlFAC0UlLSAWikpaACiiigBaWkozQAx/u1jv8Afb6mtiT7prHb7zfWgBlFLSUAIaaadTTQA01G1SGmNQBA9RGpXqJqoDrdM/5B8X4/zNW6qaZ/yD4vx/mat1AgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACmH/XL/un+lPph/wBcv+6f6UAPooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKSlpKACiiigYUUUlABSUtJQAUlLSUAJRRSUwCkpaSgAopKKYBRSUUAFFFFABRSUUALRSUtABRRRQAtFJRQAtLSUtIAooooAa/3ax2+8frWu/wB01kN94/WgBppKWkpgJSGlppoAaaY1PNMNICJ6hapnqFqoR1mm/wDIPi/H+Zq3VTTf+QfF+P8AM1bqACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKYf9cv8Aun+lPph/1y/7p/pQA+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK5zXvHfhzw3cfZtS1FVucZMMamR1HuFBx+NY3/C4PB3/P5c/wDgK/8AhVqnNq6QuZLqd5RXBf8AC4fB/wDz93X/AICv/hSf8Li8H/8AP1df+Ar/AOFP2NTsxc8e53tFcD/wuPwf/wA/N3/4CvR/wuPwf/z83f8A4CvR7Gp2Y+ePc76iqGj6vaa9pFvqdizta3AJjLqVJwSOh9wavVDVnZlC0lYGqeM9H0fUHsbySYTIAWCxFhyMjmqX/CxvD3/PW5/78GtVh6rV1FmEsVRi7OSudXRXJ/8ACxvD3/PW5/78Gj/hYvh7/nrc/wDfg0/qtb+Vk/W6H86+86ukrlf+Fi+Hv+elz/34NC/EPw8zhTPcKD3aA4FP6tW/lYfW6H86+86mioba6t722S4t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VpV5FeSnVlJbNnt4eDhSjGW6QuTRzSUVkbhz60ZPrRRQISkpaKYDaSnUlADaKWkpgFJS0lABSUtFACUUtJQAlJTqSgBKKWkpAJS0UUAFLSUtABRRRQBDN/qzWJW3P/qzWJQISkpTTaYDTTTSmmmmAhphpxppoAY1RmnmozQB2ulf8g2H6H+Zq5VPSv8AkGQ/Q/zNXKgAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACmH/Xp/ut/MU+mH/Xp/ut/MUAPooooAKKKKACiiigAooooAKSiigYUlFJQAtFJRQA6ikpaACiiigBKSkZlUZZgo9ScUiuj52OrY64OaAHUUUlAxKSlopiEooooAUU6milpALRRRQMKSiigAooooAKKKKACkpaKYhKSlpKAG0lOpKAEooopgJRRRQAUlLRQAlFLSUAJSU7FIRSASilwT0FJQAUUUUALRRSUART/AOrNYlbU/wDqzWJTEIaQ0pppoAaaaacaaaYDTTDTjTTQAxqiNSNUTUAdtpP/ACDIfof5mrtUtJ/5BkP0P8zV2oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAph/wBen+638xT6Yf8AXp/ut/MUAPooooAKKKKACiikoAWkpM0maBi0lcb4r+JWh+FpWtXZ72/XrbW5Hyf77Hhfp19q4OX46akZcw6FaLHno87E/mAK2jQqSV0iHUij27NFeX6H8atJvplg1ezk05m485W8yLPvwCPyNelxTRzxJNDIkkTgMjo2VYHoQR1FROnKD95DUk9iSikzVPVNVsNF0+S+1K6jtraP7zue/oB1J9hUpXKL1LmvINU+OVvHKyaTo7zIDxLdSbM/8BAJ/M1TtPjpdiQfbdBhaPuYLggj8xW31apa9iPaRPaqK53wx410XxbEx06crcIMyW0w2yKPXHce4zXQ1i4uLsy009jz74z/APIgn/r8i/rXP/Aj/V69/vQf+z10Hxm/5EE/9fkP9a574E9NeHvB/wCz11x/3ZmL/iI9jpKKytf8R6V4ZsPteq3SwoThEAy8h9FUcmuRJt2Rs3Y1KK8dv/jniUrpuhboweHuZ8E/8BUHH50WHx0zIF1LQtsZPL20+SP+AsBn862+r1LXsR7SJ7DS1k6D4j0rxLY/a9KulmQHDoRh4z6Mp5FatZNNOzLTuLS0nXgVxfin4naH4ZnezG+/v04eC3Iwh9GY8A+3J9qIwcnaKE2ludrmivFG+Ol952U0G2EWejXLbvz211/hX4q6L4juo7K4jfTr6Q4jjmYMkh9Ff19iBWkqFSKu0SqkWzvKK811T4xafpeuXelvo95I9tcGAyLIgDEHGa9KqJQlG1ylJPYKK4vxl8RbTwbqVvZXGn3Fy08PmhonUADcRjn6Vv8AhrXYvEvh+11eGCSCO43YjkILDDFe30odOSjzNaApJuxrUlFc74w8X23g3Tre8urWa4WabygsRAIO0nPP0qYxcnZDbSV2dFRXNeDvGdr4ztLq4tbSe2FtII2ExUkkjORg10lNxcXZgmmroKSsfxF4q0jwtaC41W6EZf8A1cKDdJJ/ur/XpXm158dB5pFjoBMYPDXFxgn8FBx+dXClOesUS5xW57BSV5do/wAbNMup1i1bTpbEMcefG/moPqMAgfTNdJ4o+IOl+F4NPneGa+hv1Z4ZLVlK4GOck9803RmnZoOeNrnWUVjeF/Elt4r0VdUtYJoIjI0eybG7K/SthjtVmPYE1DTTsxp31CiuD0H4raT4g1u30uDT72GSctiSUptXapYk4PoKztf+NGl6dcSQaTYvqRjyDOZPLiJH93glh78Vfsal7WJ542uem0VDaTm5sre4K7TLEsm3OcZAOP1qDVNWsNEsHvtSuo7a2Tgu56n0A6k+wrOzvYu5dorynUfjfZRysmm6NNcIOklxKIwf+AgE/nSaf8b7SSZU1LRZoEJ5kt5RJj/gJAP5Gtfq9S17Ee0j3NT4ysy+CYSjsp+3R8qcfwvWT8EHd7PXN7u2JYcbmJ7NVn4parY618N7a+025S4tnvo8Oh6Ha3BHUH2NVPgd/wAeeuf9dYf5NWqVsOyP+Xhp6wLu71m8MkSTvbzyeck2CILcNF5ZQHoCjSNlSpJB+b5cV1/huaafQoZJZJJV3yLDLIfmlhDsI2J7koFOe/XvV650+yvXR7uztrhk+40sSuV+mRVisJTurGiVncKKKKzKCg0U3NAEc/8AqzWKRg4rYn/1ZrH60xDT0pppxpDQAw0004000wGGmGnmmGgBjVE1Smo2oA7XSf8AkFw/Q/zNXapaT/yC4fof5mrtQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABTD/AK9P91v5in0w/wCvT/db+YoAfRRSUAFFFJQMWkJpCabmgBc1xnxL8WSeFvDWbRtuoXjGG3b+5x8z/gOnuRXY5rw344Tu3iTS4CT5cdmXA92cg/8AoIrehBSmkyKjtEwPAngW58a380888kOnwv8A6RcdXkc87Vz37knpn3r2O3+GXg63gEX9ixS4GC8ruzH8c/ypnwvtYrX4d6UYwAZw8zn1Yuf6AD8K7CrrVpOTSeiJhBWPHvG3wktrfT5tT8N+YrQqXksnYuGUdShPOR6HOazfhB4wks9VTw5dTbrO7ybXcf8AVS9do9m549frXuVZsfh7RIZ1mi0fT45kbcsiWyBlPqDjg0lWvBxnqHJZ3Rp59Tgdye1fNfjjxPd+NPFBjtvMks4pfIsLdP4snG7H95j+mBXvvimd7XwlrM8efMjspSpHY7TXhXwltIrn4gWXmgEW8MkyA/3guB+Wc1eHSSlPsKo7tRO/8MfB3SrS0jm8Qbr28YZaFXKxR+3GCx9849q19S+E/hK/tmjgsWsZcfLLbSNkH3BJBrtaKxdabd7lqEbbHzFrWj6x8P8AxTGonKXEJ861uoxgSL64/QrX0P4V8QReJ/DdnqsahGlXEsYP3JBww/P9MVw/xutIpPDOn3hA86G78tT32spyPzUGo/gdcO+g6tbMT5cV0rL7bk5/9Brep+8pKb3REfdnymr8Zf8AkQG/6+4f5mud+BJ517/th/7PXQ/GP/kQH/6+4f5muc+BR+fXvpB/7PSj/u7/AK7A/wCIj1y/voNN065vrptsFvG0sh9gM18y317rPxC8XKQpku7p9lvDn5YY+uPYAck/U17X8WbiSD4d34Q482SKNv8AdLjP8q4b4H2cUmt6teMAZILdI0z23scn/wAdFFC0KbqdQnrJROs0P4P+HdPtl/tRJNTuiPnZ3KRg/wCyqkcfUmjXPg/4d1C2c6YsmmXQHyMjl4yf9pWJ4+hFehUlY+2qXvc05I2tY+YLK81n4e+LmJUx3dq+yeHPyTR9ce4I5B+hr6XsL6DU9Otr+1bdBcRLLGfYjNeOfHCzij1fSL1QBLNA8b+4VgR/6Ea7P4S3Dz/DyzVznyZpYlz/AHQ2R/Ot69p01U6mcNJOIfFDxbL4a8PLBZSbNQvyY4nHWNAPmce/IA9z7V5J4G8CXfjK8lcym206BsT3GMszHnauerdyT0rb+Nc7yeMbSE52RWKlR7szE/yFem/DS1itPh7pAiUAzRGZyO7MxJ/oPwpp+yopx3Yrc87MgtfhT4Ot4BG+mPcNjmSa4csfyIH5CuN8a/COGy0+bU/DjzHyAXks5G3EqOSUbrkdcH8K9loHWueNaad7mjhFqx8ivczXuofariQyzSyh3durEkcmvrzNfKniSzi07xlqlnAAIob51QDsN2QPwzX1SOg+lb4vVRaIo9Tw344/8jRpn/Xkf/QzXofwqP8AxbfSv+2v/oxq88+OH/IzaX/15H/0M16D8Kj/AMW40v6y/wDoxqVT+BH+u4R/iM7SvL/jj/yLGm/9f3/tNq9OzXmHxw/5FfTf+v7/ANptWND+Ii6nwsh+Bh/4kusf9fSf+gV6PrOrQaJo15qlznybWIyMB1b0A9ycD8a82+Bv/IF1j/r6T/0CtX4yTvF4D2KSBNeRI3uBlv5qK0qR5q9iYu0LnjhOtePvFg/5bahePwCfkiQdvZVH+cmvYdH+D3hyxtl/tITajckfOzyGNM/7KqRx9Sa534G2UTXGtX7AGaNYoEPcK2WP54H5V7JV16slLkjokKnBNXZ51rfwd8P3ts50oy6ddAfIQ5kjJ/2lbnH0NeMazDqulSf2Bqe5TYSuUiJyFL4yVP8AdOAa+q68W+OFlFHqmkXygCaaGSJyO4Qgj/0I0YerJy5ZahUgkro6v4O/8iAn/X3N/MV3cn+pk/3D/KuD+Dn/ACIK/wDX5N/Su8k/1Mn+4f5VhV/iMuHwo+R4HnWYC2LiV8xqE6tu+XA+ucfjXs+hfBfTEsI3164uJrt1y8MEmyOP/ZyOWI9eK8z8DxLN480ONwCpvFJB9skfqK+n66sTUlFpRMqUU9WRxpFaWqRg7IYYwoLH7qqO5+gr5r8X+Jr3xr4l3xCR7cSeTYWy88E4Bx/ebqfrjtXvPje5e08C65NGcOLNwCO2eP61418IrKK78ewvKoP2W3kmQEfxcKD+G41nh7RjKo+hVTVqJ2Xhz4NafBaxzeIZZLm6YZa3hk2Rx+xI5Y+/ArX1D4R+FLyBltoLixlx8skMzNg+6tkGu6pKxdao3e5fJG1rHzL4m0LVvB11Pot1Lvs7llnR0+5PtyA2OzDJBHv6Yr0D4Hf8emuf9dYf5NWx8ZLKK48FJdso821ukKN3w2VI/l+VY3wO/wCPbXP+ukP8mrplPnoNszUeWpY9apKKK4TcKKKKAEpDRSGgCKf/AFZrJxWrN/qzWWaYhpppFPIppFAEZppqQimGmBGaYakNMNAEZqI1KajagDtNJ/5BkP0P8zV2qWk/8gyH8f5mrtQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABUZ/16f7rfzFSVGf8AXp/uN/MUAPpKDSUDDNITSZpCadgAmkopKAFryT43aNJLaabrcSkrATbTEfwhjlT+eR+Ir1qq19Y22p2E9jeQrNbToUkRuhBrSnPkkpEyXMrHmvwd8U28+knw5cyql3bsz2wY482MnJA9wSePQ/WvU6+efFXwz1vw3dtdabHPfWCtvjngBMsXpuA5yP7w/SqMHxN8YWMX2c6w528f6RCjOPxYZ/OumdBVHzQZkp8qtI+gde12y8OaPPqV/IFijHyrn5pG7KvqTXnHhH4neI/E/ia00sabp6RSEvO6B8xxjkn73XoB7kV59FZ+LfH2oI5W91GQcCaX5Yoh9eFUfSvb/A/gm18Hac671uNQuAPtFwBgcdEX0Ufr1qZQhSjZ6salKT02Okv7RNQ066spOI7iF4mPoGBH9a+Z9A1C48EeNYZ7qJvMsZ2huYwOSvKtj8OR+FfT9eefEP4cf8JM/wDamltHFqqqFdHOFuAOmT2YdAe/Q1NCoo3jLZjqRb1R3tneW2o2cN5ZzpPbTKGjkQ5DCp+9fMNvqHizwNcvDG99pjE5eKRMxsfXBBU/UVNe+P8AxdrsRs21S4dXG0xWkQQv7fIM1Twrvo9Be1XVHT/GHxVb6pfW2iWUqyxWTmS4kU5Uy4wFB/2RnPufau0+EWjyaX4KW5mQrJqEpuAD12YCp+YGfxrhvBXwpvtRuYr3xBA1pp6EMLZ+JZ/Yj+FfXPJ/Wvc1CoioihVUYVVGAAOgFFaUYwVOI4Jt8zOE+MX/ACT+T/r6h/ma5v4F/wCs17/dg/8AZ66j4swTXPgOWO3hlmk+0wnZGhY4z6Cuc+ClpdWkut/abWeDcsO3zYmTPL9MiiL/ANnf9dhP+IjvfG2jvr3g3U9PhXdO0W+EerqdwH44x+NeIfDTxPD4Z8Uhr1vLsrxPImc/8sznKsfYHg/U19G5ryL4g/C+e7vJtZ8PRB3lJe4shgEt3aPtz3X16elKhONnTlsx1E78yPXVYMqsrBlYZVgcgj1FBYKpYkBQMkk4AFfMmn+LvFXhIGxhvbm0RDj7NdR5Vforjj8KXUfGPirxWv2Ga/uLlJODbWse0P7FUGT+NP6pK++gvbLsX/id4ng8SeKP9CfzLKyj8iJx0kbOWYe2cAfSvafAejyaF4K02ymXbP5ZlmU9nc7iPwyB+FcB4A+FtxFeQ6x4ihEQiIeCxbliw6NJ6Adl/P0r2DNKvONlTjsh0078zPHPjdpMgu9M1lFJiaM2shx0YEsufqC35VtfB/xPBe6EPD80ire2RYwqTzJETnj1KkkEemK7vWdIs9e0m40y/j32864OOqnswPYg8ivnvxH4H1/wfe/aFSaa1jfdDf2oPHoWxyjfp71VNxqU/Zt6ileMuZH0pWfret2Xh7SJ9Tv5AkMK5AzzI3ZV9Sa8At/iv4utoBF/a0coUYDzQIzfnjn8adp2l+LPiXqsT3VxcS26H57uYYhhXvtHAJ9h+NL6s46zeg/a32Ry93ey6jq019P/AK65uDM+OxZs19ajoPpXyrr1jBp/iu/0+03GG3uzDHk5JAbHPvX1T0AB7CqxVrRsKl1PF/jlbOuraNd4/dvbyRZ9wwP8mrpvg3qsN34ObTg4+0WM7hk77HO5T9OSPwrd8c+Fl8XeHXslZY7uJvNtpG6BwMYPsRx+R7V8+517wZrO4/atLv4vlyeNw/kyn8RRTSq0uTqhSvCfMfVOa8g+N+rQNFpejo4adXa5lUfwDG1c/XJ/KuSb4s+MJ4/ITUYQ7cBorZN5+nHX8Kr6n4R1uLwzL4m1kXP2q5uUSOOUFpXBBJdx1HQAD/61FOh7OSc2Ep8ysjv/AIHf8gXWP+vpP/QK6b4m6TJrHgO/jhUtNbbbpFHU7Dk/+O7q5v4IxyR6LrAkjdM3SY3qRn5PevUT9M/WsqsuWs2i4K8LHz78KPE8Gg+JJLW8lEdnqKLGZGOFSQH5CT6HJGfcV9BnivCvHnwvvNOu5tS0G2a506Ql3toxl7c9wB/EnpjkVzuk/EXxRoEAs4NR3Qx/KsN3GJNnsM8j6ZradJVvfgyIycNJH0vXzv8AFLxLB4h8UiKzkElnYIYUkU5DuTl2HtnA/Cq93418Y+MT/ZkdxLMJflNtYw7d4/2sc4+pxTfFXgm48KaRpH2gNJqF35rzrECyxAbdqDHU8nJ/wp0aSpy956inPmWh6l8HP+RBH/X5N/Su8k/1Un+4f5VwfwfVk8BgOrKftk3DDB/hru5P9VJ/un+Vctb+IzWHwo+ZvAX/ACUDQv8Ar7H8jX05XzN4FhlXx9oZaGQAXi5JQjHWvpetsX8SIo7FHXNO/tfQNQ03vdW7xL/vEcfrivnTwXrh8K+MLW9u0ZIkZoLpccqp4bj1B5/CvpmvKPiP8NrjULuXXdBi8yeT5rq0Xguf76epPcd+oqcPOKvCWzHUi90eqxSxzwpNDIskUihkdDlWB6EHuKdXzNo3jLxJ4SLWdrdyQxqfmtLqPcqnv8rcr+GK07z4q+LdTj+yxXcVuz/L/ocGJG+h5P5VTwk76PQXtUdV8ZfEtu9vb+HLaQPMJBPdbT9zA+VT785x7D1pfgf/AKjXP9+H+T1x954G1DTPBV14g1dJY7qWeNYIGJLgM3zO/uewPPc12HwQDLBrm5WHzw9Rjs9aTUY0Gokptzuz1qikorhOgWm0pNJSASkopKAIpvuGs4jmtCb7hqiRzTAYRTSKeRTSKBDDTGFSEU0igCEimEVKRTCKYERFRmpWFMIoA7HSv+QZD+P8zVyqel/8g2H8f5mrlQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABUbf69f9xv5ipKjb/XL/uN/SgANJmg00mmMUmkpKKYBSUtJQAUUUUCDPpUUlvBK26SCJ29WjBP61JRQAdFCjhR0A6CiikoAWkoooARgHTa6hl/usMimxxRQnMUUcZP9xAv8qdRQAUUUUAKCR0OKCSepJpKKACiiigBk0MNwu2eGOUDoJEDfzpIYIbYEQQxQg9fLQL/KpKKACiiigDlfHviTVfC2jQ6np1lb3UQl2XHnbv3YP3W4PTPB+ornPB/xbj1jU2sdchttPMgAt5o2Oxm7qxY8Z7HpXpFzbQXlrLbXMSSwSqUkjcZDKeoNeL+Jvg7qFtPJP4eZby1Y5FtK4WWP2BPDD8j9a6KXs5R5Z6PuZy5k7o9jfStOkkEr6bZs55Dm3Qn88Vl+K/Fmn+ENJae4dDcbSLW0U4aRu3HZR3NeHw2XxD0uP7JbweIbePoI4vMKj6Y4/KremfDLxbr135+oRPZq5+e4vpNzkey5LH8cVXsIp3lLQXO3sjN8FaTc+KfHNqJcyKJ/tl3JjgKG3H82wPxr6WJyc+tYXhbwpp3hPTPslirPI5DT3En35W9/QDsO1blZ16ntJabFQjyoWo54ILqPy7iCKaP+7KgYfkafRWBZWt9M0+0k8y2sLSB/70UCqfzAq1uIOcmkop7gKST1OaKSigBc96qXOmadfNuu9PtLhv70sCufzIq1RRewEVva21mhS1t4YFPVYYwgP5VNn3pKSgBSc0lFJQAuTSUUUAFFJS0AVrvT7G/A+22Vtc46edCr/wAxTbTStOsG3Wen2ls396GBUP5gVboou9gCk/KlpKACkNLTaBhSZpTTaAAmm0tNoAjl+4aqYq3L9yquKAGGmkVJimkUARmmmpDTSKBETCoyKnIqNhQBARTCKlIppFMDrdM/5B0X4/zNW6qab/yD4vx/mat1ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFRt/rl/3G/mKkqJ/9cv+438xQA0mkooqhhSUUUAFFFJQIWkopKAFpKKKACiiigApKKKACiiigAooooAKKKSgBaKKKACiiigAooooAKKKKADJ9aKKKACiiigAooooAKKKKACkpaSgBaSiigAooooAKSiigApKWigAooooAKKSikAtJRSUwCkopM0DEpKU02gApppaSgCOX7lQYqaX7lRUAMIppp5ppoAaaaadikNADDUZFSmmEUAQsKZipSKYRQB1Wm/8eEf4/wAzVqqunf8AHhH+P8zVqpEFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAVFJ/rl/wBxv5ipaik/1y/7jfzFADKSiiqGFFFJQIKKKSgAooooAKKSigBao6hrWlaSVGo6laWjOMqJ5gpP4Hmr643DPTNePeEf+Eavdc14+MPsr68b5126icARjgBN3H/1sVpCCkm30Jk7HrNpeWt/brcWdzDcQt0khcOp/EVPg4zjiuP0jwdaeHNdvNb0W6kTTZ7cltNgG9JHHOVOfyHqSM4rlLfxldr8S7y+Og68yNpyoNOEf71DkfOUzgA9M01T5m+UOa2561RXP654ustBtbJp7e6mvb4D7Np8Kbp3OASMdsZwfeq+jeNrfUdXXR7/AEy+0fUpELwwXqgecB12sOCfao5JWvYfMr2Ooorm9e8Z2mi6jFpdvZXmqarInmCzs03Mq/3mPQVJ4d8X2XiG5uLL7NdWGpWwBmsrtNsij+8PUf40ckrXsHMr2NqG6t7h5UguIpXibbIsbhih9Gx0P1p8kscMTSyyLHGgyzuwAUepJ6Vwfw9GPEnjjA/5iv8A8XXQ+NhnwLroP/PlJ/Km4WnygnpcvrrmjsQq6tp5J6AXSf41fBBAIIIIyCDwa818H/D7wrqvgvSry90iOS5uLcNLL5jgk5PPBxSaXHP4A8fWXh6O6mn0HV0Jto5m3G3lHYH0zge+R3FU6cbtReqJUnuz0Q3lot0tq11ALlukJlUOf+A5zU9eN+L9Budf+K99Fp8zQ6jbaZHdWrrwTImMDPbOT+OK9C8D+KU8VaMk8i+VqFu/k3sBGCkg749DjP5jtSlTtFSQ1K7sb0NxBcKzQTxSqrbWMbhgD6HHeknuILVA9xPFChOA0rhRn0ya4L4RgDR9cAAH/E2l6fQVB4us18a/ECw8LMx+x2FrJd3RHZ2XCfllfzNP2a53G+iDm0uekKyuiujBlYZVlOQR6g0tcP8ACzUpbjwq2lXfF5o87WkinqFBO3+o/wCA11erammj6bLfyW1zcpEVzFax+ZI2SBwvfrUSg1LlGndXLuD6UV5R4L8bFda1uO6tdauVvNRHkAQtILZSSNr8/JjIyPau013xnY6LqaaXHa3upamybzaWMW9kX1bsKqVKSlYSkmrnR0Vi+HvFGn+JEuBaieC6tm23FpcpsliPuPT3rGn+JWmK08lpper39jbsUmvrW13QqR1wSeQPWpUJN2sPmR2dFcP4s8bWC+D3n01r2cajaSm2urSIlYmHGXb+Agn9DTvh74rj1fSLDTJIdSa9htA0t1cQny5CDgkSE/MTmn7OXLzC5lex21Y/ibxFB4X0gajcwSzxmZIdkRAOWOAee1bFcN8Wv+RIB9L63P8A49SppSkkxydlc7mkpTSVIyJ7q2jcpJcwIw6q0qgj8M06OWKYExSxyAddjhsflXlcfhbSfFPxb8UwarbNOkMcUiBHKEEqo7e1QeN/Cmn+A7Oy1zw3Lc2GoLdJGsPnFhODnIweT05HTBrZUotqN9WRzPex67RWPc+JbCy12w0a9E0F5fJugLR/umbuobP3s8Y9x60+TxFYJ4li8PqZpdQeLzmWOPKxJ6u38P8A9cetZcrKujVpksscMZkmkSOMdXdgo/M1Hd3UVjZXF3OcQwRtK5Hooyf5V5p4b8PH4iI/ibxVJNNbSyMtlp6SFYo0Bxk49+PfBJqoxTV3sDetkenQzw3KF7eeKZB1aJwwH5U+vNfEfgWHwzYS+IfB8k2nX1ivmyQrIWjmQfeBB9u3Q100PjXTV8G2PiS93xW9zsRljQuUkJII+mQeabhpeOolLozpKCyqPmYD6nFcdc/E/wAN2t35Tvetb7/LN6lsxt93fD9x7jNUfiu6yeHNHkjYMjapAyspyCCDgihU5cyT0uDkrXR39FZqeINPn8S3Wgq8q6hbx+c0bxlQyHHKnoeopL7XtP07V9P0q4eT7ZqBYW8aRls46knsPeo5WVdGnSUUhpAJSUUUDEpKKSgBKSlpKAI5Pu1FUkn3aj7UANNNpxppoASmmnGm0ANNNNONMNADDTD0pxphoA6rTv8Ajwj/AB/matVV07/jwi/H+Zq1UiCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKik/wBcv+438xUtQyf61f8Acb+YoAZRRSVQBRSUUAFFFFABSUUlAC0UlFAAzbUZtrNtBO1Rkn2HvXFaf/wiHxNtZbqbSY3uYXMUiTDZcIB0JKnOD+OOnau1rlNY+HXh7WdRbUGiubO8c5kmspjEXPqR0z71cGlu7EyTOZ0mwTwb8VrXQNFu5pNNvrZpbmzkk3iAgMQfY8D3wee1a9of+L56gO50ZMf99LW54d8HaL4YaWTTrdzczDElzPIZJGHpk9B9Kbr3grQ/Ed7He38M63UaeWJredomK+hI6960dSLlr2sJRdjBnxD8dbZrw4WXSStkW6b8ncB7/e/Ok+JPza14Ogtv+Ql/aYaID7wTjcfp0/Kui1Hwdo2qaLZ6VdwytFZKBbTCUiaLHcP1z/OotD8EaRoN+2oRm7vL8rsF1ezmV0X0XPSkpxVn2Dlexh+EcR/FDxpHc/8AH67xPFu6mHtj2+7Sath/jfoC2mDPHYSfbNvaP5sbvzH5iuh8QeDtK8Rzw3Vz9ot76EbY7u0lMcoHpkdR9af4e8J6V4Z8+SySaS6uP9ddXMhklk9ix7ewo54/F1tYOV7HO/D3/kZfHH/YU/8Ai66Hxr/yIuu/9eUn8qs6T4fsdFvNSurMS+bqM/n3G99w3c9PQcmrWo2EGq6Zdafc7vIuYzFJsbB2nrg9qmUk583oNL3bGJ8PyB8PdDJIAFqMkn3Ncxq11D4q+LegWmmyLcQ6MGnu5ozlFOc7cjjqFH1PtV8fCDwtjbu1Mr/d+1nH8q6rRPD2leHLM2uk2SW0bHLkZLOfVmPJqnKCbkt2KzaszkYP+S93X/YIH/stReLLS48GeJ4vG2lxlrOZhFq9ug4ZSeJMev8AXHqa7BfDlgvip/EYM3297f7ORv8Ak2fTHXj1rSuIIbq2ltriNZYZUKSIwyGU8EGl7RXXpYOXQ88+E95bx+HNfvXfFsuoyzliMfJtDZ/KsPwjN40ubjVPE+kaRp9yusTlvMu5trBVYgKoyOB0/Cu8sfAekad4a1DQbWW9Szv23THzQXHAGAccDAxW5penW2j6Va6dZqVt7aMRxhjk4Hcn1qpVY3bXUSi9LnmHh+41nQPiqTr9nb2R8QxkbLeTfGZF6EHJ5JB/76r1teGFYmv+GLDxIbF7xp45bGbzoJIHCsrcd8HjgflW1nJzUVJKVn1KirHBfDnd/b3jYDP/ACFjnH/AqxNFh8ST/EDxh/Y99pttdC6Hmi9haRmj52bcdFxj9K6q/wDh1o97rFxqcV1qdlPcuJJls7oxo7epGKs674JsNb1NNViu73TNTVNhu7GTYzr6MOhrTnjdvuTyuxh6LpGo23xDu9R1zXdHlvH08x3NragxuY+NrkHsMdfpVPSNH8W+H9MK+EdU0nWtCLu8EMw+Ygk7lDDg85HWus8P+DtM8PPczxtPe3t2MXF3eP5kkg/u+w9qyj8NLOBpk0vXNZ0uymYtJZ2tx+7564zyKXtIt7/gHKyGHXLXX/hBqt1Z2KWCJaTwyW0YAWN1XnGAOOc/jW34C3f8K+0Hrj7GlXNO8OaXpfh/+w7a2xYFGR0ZiS4b7xY9yc9ay9A8CWPhzUI7my1PVniiVlS1mud0IDf7OO1S5RaaXcaTumdTXDfFr/kRj7Xtv/6FXc1yvxD0e/13wm1jpsHnXP2qGTZvC/KrZJyeKmk0ppsqXws6o0lFFZjPJf8AhHIfEvxa8T2819fWghjikDWcuxmyqjB9RTdZ0CL4e63pGutNJrFk9yLeQaifMktieQ8bdAeD1HavQrLw3aWHifUtfjmma51BFSWNiNihcYxxnt3NHifw5aeKtFbS7yWaKIyLIJIcbgV9Mgjua6fbapdDPk08zD+Ka6efCRNyX+2idP7NMX+sNxnjb7Y6/wCOKp/C9opYtZmvmlPiU3RGpeeAHXH3AP8AZ6/j+FdHL4WtbnxBp+sXdzcXMmnw+XbQSbfLRsYMmMcsfX6elLL4XtG8Wx+JILie2vBF5UyRY2XC/wC2COvTkeg9KlTjycg7PmuXNdsX1Pw9qVhF/rLm2kiTn+IqcfrXMfCnU4bzwXBp+dt5pzPDPCfvL8xIJH44+oNdvXJ638P9N1bVDqtpd3mk6m337mxfb5nuw7n3496mLXK4yG073Rc8b6rbaN4N1O4uXC+ZbvDEpPLuwIAH55+grzzWtMm034Caba3AKSvcRSsp6qHdiB+RFddZfDewXUYr/WdT1DXJ4TmIXr5RT/u9/wCVbvibw9b+KNHOm3U8sMZlSXfEBuypyBzVxnGFku9xOLd2Z/jSzt4fhlqtmkSiCCwxGgHC7cYx+Vch4rJb4V+DyTn/AEiz/wDQDXpOr6ZHrOi3mlzSPHFdQmFnQDcoPcZrI1HwZaal4a0vRJLudIdOeJ45VVdz+WMDPbnPalTmla/cJRb2Mr4hxPo2raR4ytkJbT5/IvAv8du5x+hJ/MVFoLp4k+KGr62jCSy0uBbK1cHILNyzD/x78xWn408UeHLLStU03VL2A3D2rZs8ne+5flx+OOab8ONFbQ/BFlFMhS5uc3MwIwQW6A/RQtO9qd3vsFveOszSUUlYGgUlFIaACkopKAA000tNNADJPu1FUkn3aioAKaaDTaAA000pphNAATUbGlJpjGgBCajJpSaYTTA67Tv+PCL8f5mrVVNN/wCQfF+P8zVuoEFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAVDL/rV/3G/mKmqGX/Wr/uN/MUARUUUlUAtFJRQAtJRRQAUlFFABRRRQAUUlLQAUtJRQAtFFFABRRRQAUUUUAFFFFIAooopgFFFFABRRRQAUUUUAFFFFABRRSUAFFFJQAUUUlABRSUUAFLSUUALSUlFAxaKSloEFGaSigCrLpthPci5msLWW4GMSyQqz8dOSM1Z570UUAJSUtJQMSkpaSgBKSlpKAEpKDSUAMk+7UJqZ/u1AaYhKaaU02kMQmmk0pNMJoENJqMmlJphNMBCaYTSk1GTQB2Wmf8g6H6H+Zq3VPS/+QbD9D/M1cqACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKhl/1i/wC438xU1Qy/6xf9xv5igCGiikqgFopKKAFopKKACiiigApKWigBKKKKAFopKKAFooooAWikooAWikzRQAtFFFABRRRQAUUUUAFFFFABRSUUALSUUlAC0UmaSgBc0lFJQAUUUUAFFFFABRRRQAlFLRQAlLRSUAFFFFACUlLSUDCmmlpKAEpKKKYCUlFJQIKbS0hoAY/3agNTv92q5pAIabSmmmgBpphNONRmgBhphNONMNMBpNRMae1RE0AdtpX/ACDIPof5mrlUNGOdJg/4F/6Eav1ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFQy/6xf8Acb+YqaoZv9Yv+438xQBDSUUVQBRRSUALRSUUALSUUUAFFFFABRRRQAUUUlAC0tJRQAtFJRQAtFJRSAWikopgLRSUUgFopKKYC0UlFAC0lFJQAtJRSUALSUUUAFFFFABRRRQAUUUUAFFFFABRRRQAlFFFABSUUlABRSUUDCkNFNoAKSlppoEBptKaSmAlJS02gBr/AHarmp3+7UB60gGmmmnU00AMNRmntUZpgMNManmo2oAjaoyakaojQB2ehnOjwfV//QjWhmsTRLgDSYlz0d//AEM1picHvUMCzRUPnCl8wUAS0UzeKXcKAHUU3dS5oAWikzRQAtFJS0AFFFJQAtFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAVDN98H/YP8xUuOQahmJ81R22N/NaAIaSikqgFopKKAFopKKACiiigAopKKAFopKKAFooooAKKKKACikooGLRSUUALRSUUALRSUUCFopKKAFopKKAFpKKSgBaKSigAooooAWikooAWkoooAKKKKAFopKKAFpKKKACkopKACiikoGFJRSUAFJRRQAlIaWkoAbSUtJTEJSUtJQAx/u1XPWrD/dqsaQCGmmlNNNADGqM081GaYDTUbGnmomNADGN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/wAxO7/75T/4mmMPGY/5idz/AN8p/wDE17CYI/8Anmv5U020R/5Zj8qLsDxtpPGg/wCYlcf98J/8TUbXXjUf8xGf/v2n+FeyGziP/LMflTDYRH/lkPyouwPGTf8Ajcf8xCX/AL9J/hTDqfjcf8v8n/fpf8K9mOmRH/lktMOkxH/lktF2B41/avjcf8vz/wDflf8ACk/tXxx/z/v/AN+U/wAK9l/seL/nktH9jRf88louwPG01TxvuBa+Zx/dMC/0ouJ/F14TuuZIwe0aha9k/saL/nmlOGjxf3EouwPCz4d1i5ObiWaXP99iav2vhW7THy4+gxXs40mIdlpw0yMf3fypAeXQeHJxjcCavxeH3A5WvRBp0ft+VKNPj9f0oA4RNB9VqUaGP7tdx9hj9f0pfsUfrQBxa6GP7tSLog/u12P2OP3pfssfoaAOSXRV/u1MujL/AHa6n7PH6Gl8iP0oA5pdIX+7Ug0lf7tdF5SelL5aelAGANLX+7Txpi+lbmxfSl2r6CgDFGmr/dp39nr6VsbR6CjA9BQBkiwX0pwsF9K1MD0paAMwWS+lOFmvpWjRQBSFqB2p4twO1WqKAIBEB2p4TFSUUANxS4paKAEpaKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//9k="
-                  />
-                </defs>
-              </svg>
-            </div>
-          </div>
+          </a>
         </div>
-      </div>
-
-      <!-- Box Header -->
-      <div class="container" id="get-a-Provider">
-        <div class="white-text-container">
-          <h3>Explore the ordering options</h3>
+        <div class="navbar__list">
+          <ul class="navbar__list-item">
+            <li>
+              <a class="active" href="#">Evolve the CRC Approach</a>
+            </li>
+            <li>
+              <a class="active" href="#">About Cologuard</a>
+            </li>
+            <li>
+              <a class="active" href="#">Better CRC Outcomes</a>
+            </li>
+            <li>
+              <a class="active" href="coverage.html">Coverage and support</a>
+            </li>
+            <li>
+              <a class="active" href="resources.html">Resources and Events</a>
+            </li>
+          </ul>
         </div>
-      </div>
+        <div class="navbar__icon">
+          <form>
+            <input name="" placeholder="Search...." type="text" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </nav>
+    </div>
 
-      <!-- Icon Flex Container -->
-      <div class="container-bleed">
-        <div class="hcp-icon-grid-container">
-          <div class="ColOne">
-            <svg
-              width="54"
-              height="55"
-              viewBox="0 0 54 55"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_245_11882)">
-                <path
-                  d="M8.54471 34.0606V31.2849C9.62729 31.2318 10.6985 31.2678 11.7678 31.2622C12.8447 31.2565 13.9216 31.2622 14.9966 31.2622H31.2334C31.2808 30.3047 31.2561 29.3909 31.2466 28.4145C29.9669 28.3803 28.7156 28.4031 27.4642 28.3993C26.2053 28.3955 24.9483 28.3993 23.6894 28.3993H12.3631C11.1061 28.3993 9.85101 28.3993 8.5466 28.3993C8.48783 27.4456 8.52196 26.5318 8.52196 25.5668H31.2258V22.7229H8.5466V19.9188C9.11918 19.8562 9.68985 19.896 10.2586 19.8903C10.8502 19.8828 11.4417 19.8903 12.0332 19.8903H29.4531C30.0275 19.8903 30.6001 19.8903 31.1613 19.8903C31.2751 19.5377 31.3054 17.7574 31.2201 17.109C31.2106 17.0976 31.203 17.0844 31.1916 17.0768C31.1803 17.0673 31.167 17.0597 31.1518 17.054C31.1386 17.0483 31.1234 17.0445 31.1101 17.0408C31.0949 17.037 31.0798 17.0351 31.0646 17.0332C31.0343 17.0313 31.0039 17.0294 30.9736 17.0275C30.9584 17.0275 30.9433 17.0275 30.9281 17.0275C30.8826 17.0275 30.8371 17.0275 30.7916 17.0275C23.4695 17.0275 16.1455 17.0275 8.82341 17.0275C8.80824 17.0275 8.79307 17.0275 8.77791 17.0275C8.76274 17.0275 8.74757 17.0275 8.73241 17.0256C8.70207 17.0218 8.67173 17.018 8.6433 17.0104C8.62813 17.0066 8.61675 16.9971 8.54281 16.963C8.48783 16.0814 8.52196 15.1695 8.52196 14.2101H36.9193V5.64998H34.1417V2.8876C34.1815 2.86296 34.2062 2.83262 34.2308 2.83262C35.2015 2.82693 36.1723 2.77954 37.1411 2.82883C38.6483 2.90656 39.7707 4.13892 39.7745 5.66515C39.7821 8.30429 39.7764 10.9434 39.7764 13.5826C39.7764 13.7608 39.7764 13.9409 39.7764 14.1874C40.7472 14.195 41.6818 14.1893 42.6146 14.1912C43.555 14.1912 44.4954 14.1912 45.4339 14.1912H51.1198C52.0564 14.1912 52.993 14.1912 53.9637 14.1912C53.9751 14.3864 53.9921 14.5324 53.9921 14.6803C53.9921 20.2468 54.0092 25.8132 53.9884 31.3797C53.9675 36.9215 49.8931 41.6159 44.4025 42.4861C43.0393 42.7022 41.6856 42.6719 40.3357 42.3913C40.1746 42.3572 40.0115 42.3325 39.7935 42.2946C39.7878 42.4956 39.7764 42.67 39.7764 42.8444C39.7764 45.6201 39.7802 48.3957 39.7726 51.1714C39.7688 52.4416 38.9858 53.5072 37.7895 53.8674C37.5032 53.9527 37.1942 54.0001 36.8965 54.0001C25.555 54.0058 14.2154 54.0077 2.87397 54.0039C1.24536 54.0039 0.0395468 52.7981 -0.00026785 51.1638C-0.00405972 51.0273 -0.00026785 50.8908 -0.00026785 50.7543C-0.00026785 35.8408 -0.00026785 20.9312 0.00352402 6.02158C0.00352402 5.6898 0.00352402 5.34853 0.0717776 5.02622C0.329625 3.83936 1.27759 2.94448 2.51185 2.84779C3.53375 2.76816 4.56704 2.83073 5.65341 2.83073C5.67047 3.76353 5.66289 4.67737 5.6553 5.63861H2.91189C2.8114 6.014 2.78676 50.5912 2.87397 51.1088C3.34606 51.215 36.4984 51.2074 36.9515 51.0917V50.6538C36.9515 47.6203 36.9458 44.5868 36.9591 41.5533C36.9591 41.2234 36.8491 41.0452 36.5761 40.8689C33.6981 39.0014 31.9633 36.3755 31.3983 32.9837C31.3793 32.8699 31.3433 32.7599 31.239 32.6557V34.0568H8.54471V34.0606ZM34.1076 17.054V17.5811C34.1076 22.0991 34.1057 26.6171 34.1114 31.1351C34.1114 31.5883 34.1417 32.0452 34.2024 32.4945C34.7598 36.6485 38.6256 40.3266 43.701 39.7199C47.9688 39.2099 51.1539 35.5659 51.1596 31.2716C51.1653 26.7081 51.1596 22.1446 51.1596 17.5811V17.054H34.1076Z"
-                  fill="#3786E5"
-                />
-                <path
-                  d="M8.54688 8.46724V0H11.3415C11.3984 0.921424 11.332 1.84095 11.3813 2.78513H28.3973V0.0132715H31.2222V8.42364C30.8829 8.52033 28.9471 8.5355 28.4182 8.4388V5.67264H11.3737V8.46724H8.54688Z"
-                  fill="#3786E5"
-                />
-                <path
-                  d="M8.54883 39.7383V36.9551H31.1616C31.2716 37.2926 31.2925 39.1885 31.192 39.7383H8.54883Z"
-                  fill="#3786E5"
-                />
-                <path
-                  d="M8.54492 42.6543H31.2241C31.2791 43.5852 31.2449 44.4971 31.2468 45.4375H8.54492V42.6543Z"
-                  fill="#3786E5"
-                />
-                <path
-                  d="M35.6953 28.0341C36.3114 27.4179 36.9523 26.7752 37.6367 26.0907C38.943 27.397 40.2664 28.7204 41.6238 30.0779C43.6392 28.0606 45.63 26.0718 47.5866 24.1133C48.2539 24.7844 48.9004 25.4366 49.5071 26.0471C46.9021 28.6521 44.2402 31.3159 41.6068 33.9494C39.6824 32.025 37.6936 30.0343 35.6934 28.0341H35.6953Z"
-                  fill="#3786E5"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_245_11882">
-                  <rect width="54" height="54.0038" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-            <h4><strong>Patient Insurance Support</strong></h4>
-            <br />
-            <p>
-              Cologuard is here to support you and your patients by providing
-              easy insurance navigation
-            </p>
-            <br />
-            <p>
-              Discover whether your patient is covered with our insurance
-              estimator
-            </p>
-            <br />
-            <p>
-              Most eligible commercially insured patients pay as little as $0! 
-            </p>
-            <br />
-            <button>
-              <a href="./coverage.html"
-                ><h4><strong>Estimate Your Patient's Copay</strong></h4></a
-              >
-            </button>
-          </div>
+    <!-- Hero -->
+    <div class="HCP-home-hero"></div>
+
+    <!-- Pop up -->
+    <div class="HCP-pop-up">
+      <div class="Pop-up-content">
+        <div style="text-align: end; font-size: 20px">
+          <button class="cross-btn">X</button>
+        </div>
+        <h3 style="text-align: center">
+          Insurance can cover your patient today.
+        </h3>
+        <div class="pop-up-grid mt-24">
+          <div class="ColOne"><img src="./img/patients 1.png" /></div>
           <div class="ColTwo">
-            <svg
-              width="55"
-              height="54"
-              viewBox="0 0 499 417"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_306_11762)">
-                <path
-                  d="M250.379 0.02C305.459 0.02 360.539 0.04 415.619 0C423.259 0 429.399 2.8 433.879 9.03C436.349 12.47 437.409 16.38 437.599 20.56C437.619 21.11 437.599 21.67 437.599 22.22C437.599 104.57 437.599 186.92 437.619 269.27C437.619 275.41 435.969 280.85 431.569 285.28C427.999 288.87 423.719 291 418.629 291.35C417.309 291.44 415.969 291.49 414.649 291.49C305.149 291.49 195.659 291.49 86.1595 291.53C79.3995 291.53 73.4595 289.89 68.7695 284.82C65.5795 281.37 63.6895 277.32 63.3695 272.61C63.2595 270.95 63.1995 269.29 63.1995 267.63C63.1995 186.28 63.1995 104.92 63.1895 23.57C63.1895 19.32 63.4295 15.14 65.5295 11.31C69.4095 4.23 75.4095 0.47 83.4695 0.03C84.5795 -0.03 85.6895 0.02 86.7895 0.02C141.319 0.02 195.839 0.02 250.369 0.02H250.379ZM416.429 21.01C414.839 21.01 413.529 21.01 412.219 21.01C398.369 21.06 384.519 21.1 370.669 21.16C341.979 21.28 313.279 21.39 284.589 21.52C264.319 21.61 244.039 21.74 223.769 21.82C179.119 22 134.469 22.17 89.8195 22.35C88.1995 22.35 86.5795 22.49 84.8795 22.56V270.6H416.429V21.01Z"
-                  fill="#3786E5"
-                />
-                <path
-                  d="M27.7792 395.11H471.209C469.919 392.53 468.869 390.37 467.779 388.23C457.699 368.39 447.589 348.56 437.579 328.69C436.659 326.87 435.989 324.75 435.869 322.72C435.599 318.09 438.729 313.98 443.059 312.68C447.489 311.35 452.219 312.95 454.809 316.72C455.429 317.63 455.909 318.64 456.409 319.62C469.909 346.17 483.399 372.72 496.889 399.27C497.439 400.35 497.999 401.45 498.379 402.6C500.639 409.34 495.779 416.17 488.669 416.27C485.789 416.31 482.909 416.23 480.029 416.23C399.699 416.23 319.369 416.23 239.029 416.23C163.909 416.23 88.7792 416.26 13.6592 416.28C12.6592 416.28 11.6592 416.23 10.6692 416.28C3.74923 416.68 -2.69077 409.33 1.13923 401.09C3.65923 395.67 6.51923 390.41 9.21923 385.08C20.0492 363.76 30.8892 342.44 41.7192 321.12C42.3192 319.94 42.8992 318.73 43.5692 317.59C46.4892 312.62 52.3592 310.8 57.3592 313.28C62.4692 315.81 64.6592 321.83 62.1192 327.15C59.0592 333.54 55.7492 339.81 52.5392 346.12C44.6492 361.61 36.7592 377.1 28.8692 392.59C28.5192 393.27 28.2492 394 27.7692 395.09L27.7792 395.11Z"
-                  fill="#3786E5"
-                />
-                <path
-                  d="M250.309 353.7C308.159 353.7 366.009 353.7 423.859 353.7C425.189 353.7 426.529 353.65 427.849 353.75C433.279 354.18 437.319 358.77 437.229 364.33C437.139 369.74 433.089 374.07 427.729 374.45C426.629 374.53 425.509 374.5 424.409 374.5C308.159 374.5 191.909 374.5 75.6491 374.5C74.7591 374.5 73.8791 374.52 72.9891 374.48C67.3191 374.18 63.0091 369.66 63.0491 364.05C63.0891 358.44 67.4191 353.98 73.1091 353.72C74.2191 353.67 75.3291 353.7 76.4291 353.7C134.389 353.7 192.349 353.7 250.309 353.7Z"
-                  fill="#3786E5"
-                />
-                <path
-                  d="M250.321 333.11C199.011 333.11 147.701 333.11 96.3807 333.11C95.0507 333.11 93.7007 333.18 92.4007 332.95C87.4707 332.09 84.0206 327.92 83.9506 322.88C83.8706 317.57 87.1507 313.44 92.3107 312.46C93.6107 312.21 94.9507 312.14 96.2706 312.14C198.891 312.13 301.521 312.13 404.141 312.14C405.461 312.14 406.811 312.22 408.101 312.47C413.391 313.49 416.931 318.25 416.471 323.6C416.021 328.73 411.781 332.81 406.581 333.09C405.471 333.15 404.361 333.11 403.261 333.11C352.281 333.11 301.301 333.11 250.321 333.11Z"
-                  fill="#3786E5"
-                />
-                <path
-                  d="M129.819 171.341L112.859 118.891H126.129L131.499 138.171C133.679 146.461 135.539 153.341 137.079 158.811L142.239 139.961L148.349 118.891H163.409L169.729 140.901C171.769 148.411 173.419 154.311 174.679 158.601L180.579 137.011L185.849 118.891H199.019L181.849 171.341H166.579L159.839 147.541L156.889 137.011L155.419 131.741C154.719 134.551 153.239 139.781 150.999 147.431L144.149 171.341H129.829H129.819Z"
-                  fill="#3786E5"
-                />
-                <path
-                  d="M219.249 171.341L202.289 118.891H215.559L220.929 138.171C223.109 146.461 224.969 153.341 226.509 158.811L231.669 139.961L237.779 118.891H252.839L259.159 140.901C261.199 148.411 262.849 154.311 264.109 158.601L270.009 137.011L275.279 118.891H288.449L271.279 171.341H256.009L249.269 147.541L246.319 137.011L244.849 131.741C244.149 134.551 242.669 139.781 240.429 147.431L233.579 171.341H219.259H219.249Z"
-                  fill="#3786E5"
-                />
-                <path
-                  d="M308.669 171.341L291.709 118.891H304.979L310.349 138.171C312.529 146.461 314.389 153.341 315.929 158.811L321.089 139.961L327.199 118.891H342.259L348.579 140.901C350.619 148.411 352.269 154.311 353.529 158.601L359.429 137.011L364.699 118.891H377.869L360.699 171.341H345.429L338.689 147.541L335.739 137.011L334.269 131.741C333.569 134.551 332.089 139.781 329.849 147.431L322.999 171.341H308.679H308.669Z"
-                  fill="#3786E5"
-                />
-                <path
-                  d="M378.719 171.341V155.961H394.309V171.341H378.719Z"
-                  fill="#3786E5"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_306_11762">
-                  <rect width="498.95" height="416.31" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-
-            <h4><strong>EpicCare Link</strong></h4>
-            <br />
-            <p>
-              Get started by registering at
-              <span class="underline_link"
-                >epiccarelink.exactscienceslabs.com</span
-              >
-              to place orders and receive results quickly and efficiently.
+            <p class="mb-24">
+              Discover whether your <br />
+              patient is covered with <br />
+              our insurance estimator
             </p>
-            <br />
-            <p>Receive email reminders when lab results are available</p>
-            <br />
-            <p>
-              Access patient charts, including full history with Exact Sciences
-              Laboratories
-            </p>
-            <br />
-            <p>Run reports that include:</p>
-            <ul>
-              <li>Patients due for screening</li>
-              <li>Order status</li>
-              <li>Order results</li>
-            </ul>
-          </div>
-          <div class="ColThree">
-            <svg
-              width="55"
-              height="54"
-              viewBox="0 0 352 460"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_306_11759)">
-                <path
-                  d="M347.61 410.61C338.02 400.91 328.32 391.31 318.68 381.65C317.55 380.52 316.5 379.3 315.12 377.81C322.03 370.98 328.71 364.5 335.24 357.87C342.5 350.49 340.22 342.32 330.19 339.51C320.16 336.71 310.1 333.99 299.76 331.16V325.1C299.76 248.4 299.72 171.7 299.84 95.0096C299.84 89.9496 298.34 86.1696 294.76 82.6396C280.29 68.3996 266.1 53.8796 251.61 39.6696C251.05 39.1196 250.56 38.5796 250.14 38.0196L227.11 14.9896C226.93 15.0596 226.75 15.1296 226.57 15.1996C223.76 12.1596 220.83 9.21955 218.17 6.04956C214.47 1.63956 210.02 0.0695552 204.18 0.0895552C146.93 0.269555 89.69 0.539555 32.45 -0.000444785C14.36 -0.170445 -0.04 14.0496 0.05 32.5696C0.5 122.25 0.25 211.92 0.25 301.6V307.66H0V327.58H0.25V347.45C0.27 367.17 12.57 379.49 32.27 379.49C91.84 379.49 151.41 379.53 210.98 379.41C214.74 379.4 216.43 380.24 217.42 384.16C221.95 402 226.86 419.75 231.71 437.51C234.63 448.16 242.76 450.28 250.64 442.47C257.13 436.05 263.54 429.54 270.24 422.83C271.71 424.2 272.93 425.28 274.08 426.43C283.74 436.07 293.35 445.75 303.05 455.35C308.75 460.99 313.74 460.99 319.49 455.31C328.96 445.96 338.38 436.55 347.73 427.08C353.34 421.4 353.3 416.37 347.61 410.61ZM218.04 36.3696C233.24 51.4696 248.54 66.6796 264 82.0396C252.12 82.0396 240.17 82.1496 228.24 81.9896C222.67 81.9196 218.32 78.3196 218.16 72.9296C217.79 60.5596 218.04 48.1796 218.04 36.3696ZM214.07 308.37C204.25 305.81 198.14 312.04 200.74 321.97C203.97 334.3 207.26 346.63 210.68 359.56H204.88C147.98 359.56 91.09 359.57 34.19 359.56C23.35 359.56 20.19 356.42 20.19 345.61V34.2396C20.19 23.3496 23.34 20.1296 34.04 20.1296H197.95C197.95 37.6396 197.92 54.5696 197.97 71.4996C198.01 86.3696 207.24 98.0396 221.64 101.37C223.87 101.89 226.25 101.95 228.56 101.96C243.86 102.01 259.17 101.98 274.47 101.98H279.57V325.8C266.23 322.26 253.13 318.79 240.03 315.3C231.37 313 222.74 310.63 214.07 308.37ZM310.82 434.52C309.94 433.7 308.63 432.54 307.39 431.31C297.85 421.79 288.36 412.22 278.78 402.75C272.84 396.86 267.93 396.91 261.98 402.75C257.35 407.29 252.77 411.87 248.15 416.43C248.04 416.54 247.86 416.58 247.01 416.97C239.5 388.99 232.03 361.13 224.18 331.86C253.3 339.67 281.21 347.16 310.49 355.01C305.15 360.06 300.51 364.3 296.04 368.72C288.85 375.81 288.86 380.21 295.88 387.25C305.04 396.44 314.19 405.64 323.43 414.75C324.72 416.02 326.52 416.77 327.81 417.6C321.55 423.83 316.39 428.97 310.82 434.52Z"
-                  fill="#3786E5"
-                />
-                <path
-                  d="M169.499 245.469V264.129C163.819 265.809 158.109 266.369 152.349 266.419C116.739 266.749 86.2692 241.569 80.4692 206.319C73.6492 164.909 101.509 130.859 136.569 123.619C175.239 115.629 212.509 139.079 221.779 177.359C226.039 194.969 223.749 211.889 215.469 228.019C214.559 229.799 213.489 230.439 211.469 230.429C198.489 230.329 185.509 230.379 172.539 230.379C171.689 230.379 170.849 230.309 169.729 230.259C169.679 229.129 169.589 228.109 169.589 227.079C169.589 216.309 169.599 205.539 169.579 194.759C169.559 185.129 163.319 177.909 153.809 176.419C144.239 174.919 134.579 182.719 133.769 192.379C132.799 204.019 141.809 211.739 150.099 212.119C150.559 212.139 151.009 212.319 151.569 212.459V230.139C149.119 230.649 146.859 230.079 144.649 229.649C127.769 226.419 115.409 211.269 115.509 194.039C115.609 176.759 128.139 161.819 145.069 158.799C165.429 155.169 184.359 168.759 187.329 189.229C187.699 191.779 187.609 194.409 187.629 196.999C187.669 201.889 187.639 206.779 187.639 211.579C189.919 212.259 198.889 212.399 202.409 211.889C209.039 195.539 206.439 169.239 185.729 152.359C166.139 136.389 138.389 136.099 118.479 151.559C98.6092 166.989 92.1392 194.029 102.579 216.969C111.799 237.219 137.419 255.349 169.499 245.459V245.469Z"
-                  fill="#3786E5"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_306_11759">
-                  <rect width="351.91" height="459.58" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-
-            <h4><strong>Customized Electronic Options</strong></h4>
-            <br />
-            <p>
-              Leverage your EHR or lab ordering workﬂow to place orders and
-              receive results
-            </p>
-            <br />
-            <p>Run reports that include:</p>
-            <ul>
-              <li>Fax or eFax through EHR</li>
-              <li>EHR interface</li>
-              <li>Lab interface</li>
-            </ul>
-            <p>Requires IT department, EHR vendor, or lab partner</p>
-            <br />
-            <p>
-              <a><span class="underline_link">Contact us</span></a> to submit a
-              general question and get started with electronic options
-            </p>
-          </div>
-          <div class="ColFour">
-            <svg
-              width="55"
-              height="54"
-              viewBox="0 0 348 398"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_306_11772)">
-                <path
-                  d="M325.111 82.6396C310.641 68.3996 296.451 53.8796 281.961 39.6696C281.401 39.1196 280.911 38.5796 280.491 38.0196L257.461 14.9896C257.281 15.0596 257.101 15.1296 256.921 15.1996C254.111 12.1596 251.181 9.21955 248.521 6.04956C244.821 1.63956 240.371 0.0695552 234.531 0.0895552C177.281 0.269555 120.041 0.539555 62.8008 -0.000444785C44.7108 -0.170445 30.3108 14.0496 30.4008 32.5696C30.5308 58.3996 30.6008 84.2296 30.6308 110.06C37.2708 109.97 43.9108 109.92 50.5408 109.97V34.2396C50.5408 23.3496 53.6908 20.1296 64.3908 20.1296H228.301C228.301 37.6396 228.271 54.5696 228.321 71.4996C228.361 86.3696 237.591 98.0396 251.991 101.37C254.221 101.89 256.601 101.95 258.911 101.96C274.211 102.01 289.521 101.98 304.821 101.98H309.921V135.8C316.671 135.9 323.411 135.85 330.151 135.65C330.151 122.1 330.171 108.56 330.191 95.0096C330.201 89.9496 328.691 86.1696 325.111 82.6396ZM258.591 81.9896C253.021 81.9196 248.671 78.3196 248.511 72.9296C248.141 60.5596 248.391 48.1796 248.391 36.3696C263.591 51.4696 278.891 66.6796 294.351 82.0396C282.471 82.0396 270.521 82.1496 258.591 81.9896Z"
-                  fill="#3786E5"
-                />
-                <path
-                  d="M101.8 111.08H20.5C14.9772 111.08 10.5 115.557 10.5 121.08V376.67C10.5 382.193 14.9772 386.67 20.5 386.67H101.8C107.323 386.67 111.8 382.193 111.8 376.67V121.08C111.8 115.557 107.323 111.08 101.8 111.08Z"
-                  stroke="#3786E5"
-                  stroke-width="21"
-                  stroke-miterlimit="10"
-                />
-                <path
-                  d="M326.781 132.301H121.801C116.278 132.301 111.801 136.778 111.801 142.301V362.801C111.801 368.324 116.278 372.801 121.801 372.801H326.781C332.304 372.801 336.781 368.324 336.781 362.801V142.301C336.781 136.778 332.304 132.301 326.781 132.301Z"
-                  stroke="#3786E5"
-                  stroke-width="21"
-                  stroke-miterlimit="10"
-                />
-                <path
-                  d="M282.589 168.9H161.619C155.125 168.9 149.859 174.166 149.859 180.66V180.67C149.859 187.165 155.125 192.43 161.619 192.43H282.589C289.084 192.43 294.349 187.165 294.349 180.67V180.66C294.349 174.166 289.084 168.9 282.589 168.9Z"
-                  fill="#3786E5"
-                />
-                <path
-                  d="M161.129 235.04C167.354 235.04 172.399 229.994 172.399 223.77C172.399 217.546 167.354 212.5 161.129 212.5C154.905 212.5 149.859 217.546 149.859 223.77C149.859 229.994 154.905 235.04 161.129 235.04Z"
-                  fill="#3786E5"
-                />
-                <path
-                  d="M221.86 235.04C228.084 235.04 233.13 229.994 233.13 223.77C233.13 217.546 228.084 212.5 221.86 212.5C215.636 212.5 210.59 217.546 210.59 223.77C210.59 229.994 215.636 235.04 221.86 235.04Z"
-                  fill="#3786E5"
-                />
-                <path
-                  d="M282.6 235.04C288.824 235.04 293.87 229.994 293.87 223.77C293.87 217.546 288.824 212.5 282.6 212.5C276.376 212.5 271.33 217.546 271.33 223.77C271.33 229.994 276.376 235.04 282.6 235.04Z"
-                  fill="#3786E5"
-                />
-                <path
-                  d="M161.129 334.229C167.354 334.229 172.399 329.184 172.399 322.959C172.399 316.735 167.354 311.689 161.129 311.689C154.905 311.689 149.859 316.735 149.859 322.959C149.859 329.184 154.905 334.229 161.129 334.229Z"
-                  fill="#3786E5"
-                />
-                <path
-                  d="M221.86 334.229C228.084 334.229 233.13 329.184 233.13 322.959C233.13 316.735 228.084 311.689 221.86 311.689C215.636 311.689 210.59 316.735 210.59 322.959C210.59 329.184 215.636 334.229 221.86 334.229Z"
-                  fill="#3786E5"
-                />
-                <path
-                  d="M282.6 334.229C288.824 334.229 293.87 329.184 293.87 322.959C293.87 316.735 288.824 311.689 282.6 311.689C276.376 311.689 271.33 316.735 271.33 322.959C271.33 329.184 276.376 334.229 282.6 334.229Z"
-                  fill="#3786E5"
-                />
-                <path
-                  d="M161.129 284.64C167.354 284.64 172.399 279.594 172.399 273.37C172.399 267.145 167.354 262.1 161.129 262.1C154.905 262.1 149.859 267.145 149.859 273.37C149.859 279.594 154.905 284.64 161.129 284.64Z"
-                  fill="#3786E5"
-                />
-                <path
-                  d="M221.86 284.64C228.084 284.64 233.13 279.594 233.13 273.37C233.13 267.145 228.084 262.1 221.86 262.1C215.636 262.1 210.59 267.145 210.59 273.37C210.59 279.594 215.636 284.64 221.86 284.64Z"
-                  fill="#3786E5"
-                />
-                <path
-                  d="M282.6 284.64C288.824 284.64 293.87 279.594 293.87 273.37C293.87 267.145 288.824 262.1 282.6 262.1C276.376 262.1 271.33 267.145 271.33 273.37C271.33 279.594 276.376 284.64 282.6 284.64Z"
-                  fill="#3786E5"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_306_11772">
-                  <rect width="347.27" height="397.17" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-
-            <h4>
-              <strong>Fax or eFax (via computer, mobile, or tablet)</strong>
-            </h4>
-            <br />
-            <p>Most simple way to begin ordering</p>
-            <br />
-            <p>Get started with a secure fax line</p>
-            <br />
-            <p>
-              Download an <a>order form</a> and fax it to
-              <span class="underline_link" style="text-decoration: none"
-                >1-844-870-8875</span
-              >
-            </p>
+            <button>Explore Options</button>
           </div>
         </div>
-        <div class="container mt-50 ml-12">
-          For more information about the ordering options, call
-          <span class="underline_link" style="text-decoration: none"
-            >1-844-870-8870</span
-          >
-        </div>
-      </div>
-
-      <!-- Banner -->
-      <div class="banner-container mt-24">
-        <div class="container banner-flex">
-          <h4 style="color: white">
-            Learn about resources for you practice and your patients
-          </h4>
-          <div>
-            <button>Request a Rep</button>
-          </div>
-        </div>
-      </div>
-      <br />
-      <div>
-        <div class="container ISI">
-          <p><strong>Indications and Important Risk Information</strong></p>
-          <br />
-          <p>
-            Cologuard is intended for the qualitative detection of colorectal
-            neoplasia associated DNA markers and for the presence of occult
-            hemoglobin in human stool. A positive result may indicate the
-            presence of colorectal cancer (CRC) or advanced adenoma (AA) and
-            should be followed by colonoscopy. Cologuard is indicated to screen
-            adults of either sex, 45 years or older, who are at typical average
-            risk for CRC. Cologuard is not a replacement for diagnostic
-            colonoscopy or surveillance colonoscopy in high-risk individuals.
-          </p>
-          <br />
-          <p>
-            Cologuard is not for high-risk individuals, including patients with
-            a personal history of colorectal cancer and adenomas; have had a
-            positive result from another colorectal cancer screening method
-            within the last 6 months; have been diagnosed with a condition
-            associated with high risk for colorectal cancer such as IBD, chronic
-            ulcerative colitis, Crohn’s disease; or have a family history of
-            colorectal cancer, or certain hereditary syndromes.
-          </p>
-          <br />
-          <p>
-            Positive Cologuard results should be referred to colonoscopy. A
-            negative Cologuard test result does not guarantee absence of cancer
-            or advanced adenoma. Following a negative result, patients should
-            continue participating in a screening program at an interval and
-            with a method appropriate for the individual patient.
-          </p>
-          <br />
-          <p>
-            False positives and false negatives do occur. In a clinical study,
-            13% of patients without colorectal cancer or advanced adenomas
-            received a positive result (false positive) and 8% of patients with
-            cancer received a negative result (false negative). The clinical
-            validation study was conducted in patients 50 years of age and
-            older. Cologuard performance in patients ages 45 to 49 years was
-            estimated by sub-group analysis of near-age groups.
-          </p>
-          <br />
-          <p>
-            Cologuard performance when used for repeat testing has not been
-            evaluated or established. Rx only.
-          </p>
-        </div>
-      </div>
-
-      <!-- Cologuard Bottom -->
-      <div class="container mb-24">
-        <div class="footer-conatiner mt-24 mb-24">
-          <img src="./img/cologuard-logo-2.svg" />
-        </div>
-        <div class="footer-container-flex">
-          <div class="ColOne">
-            <ul>
-              <li>CRC on the Rise</li>
-              <li>Early Detection</li>
-              <li>Patient Barriers</li>
-              <li>Shared Decision-Making</li>
-              <li>Noninvasive Impact</li>
-            </ul>
-          </div>
-          <div class="ColTwo">
-            <ul>
-              <li>Sensitivity and Specificity</li>
-              <li>Cologuard vs FIT</li>
-              <li>Ease of Use</li>
-              <li>Appropriate Patients</li>
-              <li>National Guidelines</li>
-            </ul>
-          </div>
-          <div class="ColThree">
-            <ul>
-              <li>Cologuard Adherence</li>
-              <li>Cologuard Rescreening</li>
-              <li>Follow-up Colonoscopy Adherence</li>
-              <li>Life-Years Gained</li>
-            </ul>
-          </div>
-          <div class="ColFour">
-            <ul>
-              <li>Coverage</li>
-              <li>Comprehensive Support</li>
-            </ul>
-          </div>
-          <div class="ColFive">
-            <ul>
-              <li>How to Order</li>
-              <li>HCP Resources</li>
-              <li>HCP Media Library</li>
-              <li>Events</li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-container-flex-end">
-          <p>
-            About Exact Sciences | Contact Us | Terms of Use | Privacy Policy |
-            Do Not Sell My Info
-          </p>
-        </div>
-      </div>
-
-      <!-- Footer -->
-      <footer>
-        <div class="footer">
-          <div class="bg-secondary">
-            <div class="container">
-              <p>
-                EXACT SCIENCES CORPORATION | 5505 Endeavor Lane, Madison, WI
-                53719
-              </p>
-              <p>
-                Cologuard is a registered trademark of Exact Sciences
-                Corporation in the U.S. and other countries. EpicCare<sup
-                  >®</sup
-                >
-                and EpicCare<sup>®</sup> Link<sup>™</sup> are trademarks of Epic
-                Systems Corporation.
-              </p>
-              <p>
-                © 2023 Exact Sciences Corporation. All rights reserved.
-                M-US-CG-00203-February 2023
-              </p>
-            </div>
-          </div>
-          <div class="footer-icon">
-            <img src="./img/chat-button.png" alt="" />
-          </div>
-        </div>
-      </footer>
-      <div>
-        <script src="./JS/style.js"></script>
       </div>
     </div>
+
+    <!-- Hero Banner  -->
+    <div class="hero-banner-container">
+      <div class="container-bleed">
+        <div class="hero-banner-container-grid">
+          <div class="ColOne">
+            <h1>This is <span style="color: #ffed6d">more</span> than a box</h1>
+            <p>
+              It's a breakthrough noninvasvie stool DNA technology.<sup
+                >1,2</sup
+              >
+            </p>
+          </div>
+          <div class="ColTwo">
+            <p>
+              <strong>
+                Explore the benefits of screening for colorectal cancer(CRC)
+                with Cologuard
+                <span style="color: #0087ed; font-size: 18px">&#8594;</span>
+              </strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Body banner -->
+    <div class="body-banner-container">
+      <div class="body-banner-grid">
+        <div class="ColOne">
+          <div>
+            <p>
+              See how your approach to CRC screening<br />
+              matters to patients
+            </p>
+          </div>
+          <div style="color: #ef6f1a">&#8594;</div>
+        </div>
+        <div class="ColTwo">
+          <div>
+            <p>Explore the comprehensive<br />support Cologuard offers</p>
+          </div>
+          <div style="color: #ef6f1a">&#8594;</div>
+        </div>
+        <div class="ColThree">
+          <div>
+            <span style="display: flex; align-items: center">
+              <img src="./img/order-cologuard-cta.webp" />
+              <p>Order Cologuard</p>
+            </span>
+          </div>
+          <div style="color: #ef6f1a">&#8594;</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ISI -->
+    <div class="mt-50">
+      <div class="container ISI">
+        <p><strong>Indications and Important Risk Information</strong></p>
+        <br />
+        <p>
+          Cologuard is intended for the qualitative detection of colorectal
+          neoplasia associated DNA markers and for the presence of occult
+          hemoglobin in human stool. A positive result may indicate the presence
+          of colorectal cancer (CRC) or advanced adenoma (AA) and should be
+          followed by colonoscopy. Cologuard is indicated to screen adults of
+          either sex, 45 years or older, who are at typical average risk for
+          CRC. Cologuard is not a replacement for diagnostic colonoscopy or
+          surveillance colonoscopy in high-risk individuals.
+        </p>
+        <br />
+        <p>
+          Cologuard is not for high-risk individuals, including patients with a
+          personal history of colorectal cancer and adenomas; have had a
+          positive result from another colorectal cancer screening method within
+          the last 6 months; have been diagnosed with a condition associated
+          with high risk for colorectal cancer such as IBD, chronic ulcerative
+          colitis, Crohn’s disease; or have a family history of colorectal
+          cancer, or certain hereditary syndromes.
+        </p>
+        <br />
+        <p>
+          Positive Cologuard results should be referred to colonoscopy. A
+          negative Cologuard test result does not guarantee absence of cancer or
+          advanced adenoma. Following a negative result, patients should
+          continue participating in a screening program at an interval and with
+          a method appropriate for the individual patient.
+        </p>
+        <br />
+        <p>
+          False positives and false negatives do occur. In a clinical study, 13%
+          of patients without colorectal cancer or advanced adenomas received a
+          positive result (false positive) and 8% of patients with cancer
+          received a negative result (false negative). The clinical validation
+          study was conducted in patients 50 years of age and older. Cologuard
+          performance in patients ages 45 to 49 years was estimated by sub-group
+          analysis of near-age groups.
+        </p>
+        <br />
+        <p>
+          Cologuard performance when used for repeat testing has not been
+          evaluated or established. Rx only.
+        </p>
+      </div>
+    </div>
+
+    <!-- Cologuard Bottom -->
+    <div class="container mb-24">
+      <div class="footer-conatiner mt-24 mb-24">
+        <img src="./img/cologuard-logo-2.svg" />
+      </div>
+      <div class="footer-container-flex">
+        <div class="ColOne">
+          <ul>
+            <li>CRC on the Rise</li>
+            <li>Early Detection</li>
+            <li>Patient Barriers</li>
+            <li>Shared Decision-Making</li>
+            <li>Noninvasive Impact</li>
+          </ul>
+        </div>
+        <div class="ColTwo">
+          <ul>
+            <li>Sensitivity and Specificity</li>
+            <li>Cologuard vs FIT</li>
+            <li>Ease of Use</li>
+            <li>Appropriate Patients</li>
+            <li>National Guidelines</li>
+          </ul>
+        </div>
+        <div class="ColThree">
+          <ul>
+            <li>Cologuard Adherence</li>
+            <li>Cologuard Rescreening</li>
+            <li>Follow-up Colonoscopy Adherence</li>
+            <li>Life-Years Gained</li>
+          </ul>
+        </div>
+        <div class="ColFour">
+          <ul>
+            <li>Coverage</li>
+            <li>Comprehensive Support</li>
+          </ul>
+        </div>
+        <div class="ColFive">
+          <ul>
+            <li>How to Order</li>
+            <li>HCP Resources</li>
+            <li>HCP Media Library</li>
+            <li>Events</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-container-flex-end">
+        <p>
+          About Exact Sciences | Contact Us | Terms of Use | Privacy Policy | Do
+          Not Sell My Info
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <div class="bg-secondary">
+          <div class="container">
+            <p>
+              EXACT SCIENCES CORPORATION | 5505 Endeavor Lane, Madison, WI 53719
+            </p>
+            <p>
+              Cologuard is a registered trademark of Exact Sciences Corporation
+              in the U.S. and other countries. EpicCare<sup>®</sup> and
+              EpicCare<sup>®</sup> Link<sup>™</sup> are trademarks of Epic
+              Systems Corporation.
+            </p>
+            <p>
+              © 2023 Exact Sciences Corporation. All rights reserved.
+              M-US-CG-00203-February 2023
+            </p>
+          </div>
+        </div>
+        <div class="footer-icon">
+          <img src="./img/chat-button.png" alt="" />
+        </div>
+      </div>
+    </footer>
+
+    <script src="./JS/pop.js"></script>
   </body>
 </html>

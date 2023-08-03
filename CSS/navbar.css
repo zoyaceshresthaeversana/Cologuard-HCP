@@ -1,7 +1,7 @@
 .navbar {
   background-color: #001963;
   color: white;
-  height: 80px;
+  height: 80px !important;
   width: 100%;
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.5);
   position: relative;

@@ -8,6 +8,7 @@ const medicaidHiddenBlock = document.querySelector(
 const medicareHiddenBlock = document.querySelector(
   ".Medicare-hidden-chart-container"
 );
+
 const navBar = document.querySelector(".navbar-container-mobile-view");
 const navBarIcon = document.querySelector(".navbar-hamburger-icon");
 const searchBtn = document.querySelector(".CommercialSearch");
@@ -20,14 +21,6 @@ const cologuardimage = document.querySelector(".cologuard-image");
 function toggleMobileMenu(menu) {
   menu.classList.toggle("open");
 }
-
-// navBarIcon.addEventListener("click", () => {
-//   if (navBar.style.display === "none") {
-//     navBar.style.display = "flex";
-//   } else {
-//     navBar.style.display = "none";
-//   }
-// });
 
 // Commercial button
 commercialBtn.addEventListener("click", () => {
