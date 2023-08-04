@@ -145,7 +145,6 @@
   text-align: left;
   transition: none;
   background: transparent;
-  vertical-align: middle;
   color: white;
   box-sizing: border-box;
 }
@@ -230,7 +229,7 @@
     text-align: left;
     transition: none;
     background: transparent;
-    vertical-align: middle;
+   
     color: #006cbe;
     box-sizing: border-box;
   }
